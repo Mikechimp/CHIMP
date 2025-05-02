@@ -1,17 +1,26 @@
 import subprocess
 
-def scan_ports(ip):
+def scan_ports(ip)
+    print(f"\n🚀 Starting AutoRecon on {ip}...\n")
     try:
         # Run AutoRecon against the target IP
-        result = subprocess.run(
+        process = subprocess.Popen(
             ["autorecon", ip],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
-            text=True
+            text=True        
         )
+ # Live output loop
+        output_lines = []
+        for line in process.stdout:
+            print(line.strip())  # Real-time output to terminal
+            output_lines.append(line)
 
-        return result.stdout  # This is the full AutoRecon output
+        process.wait()
 
-    except subprocess.CalledProcessError as e:
-        return f"AutoRecon failed: {e.output}"
+        print(f\n Auto recon complete for [ip]\n")
+        return "".join(output_lines)
 
+    
+    except Exception as e:
+        return f"❌ AutoRecon failed: {str(e)}"
