@@ -1,21 +1,17 @@
 import subprocess
 
-def scan_ports(ip, start_port=1, end_port=1024):
-    open_ports = []
-
-    for port in range(start_port, end_port + 1):
-        if port in (80, 443):  # Skip 80 and 443
-            continue
-
+def scan_ports(ip):
+    try:
+        # Run AutoRecon against the target IP
         result = subprocess.run(
-            ["nc", "-zv", "-w", "1", ip, str(port)],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.PIPE,
+            ["autorecon", ip],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
             text=True
         )
 
-        if "succeeded" in result.stderr:
-            open_ports.append(port)
+        return result.stdout  # This is the full AutoRecon output
 
-    return open_ports
+    except subprocess.CalledProcessError as e:
+        return f"AutoRecon failed: {e.output}"
 
