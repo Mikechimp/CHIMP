@@ -1,6 +1,6 @@
 import subprocess
 
-def scan_ports(ip)
+def scan_ports(ip):
     print(f"\n🚀 Starting AutoRecon on {ip}...\n")
     try:
         # Run AutoRecon against the target IP
