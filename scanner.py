@@ -18,7 +18,7 @@ def scan_ports(ip):
 
         process.wait()
 
-        print(f\n Auto recon complete for [ip]\n")
+        print(f"\n Auto recon complete for [ip]\n")
         return "".join(output_lines)
 
     
