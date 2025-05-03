@@ -1,3 +1,10 @@
+```bash
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/kali/rp1/results/198.248.86.124/scans/_quick_tcp_nmap.txt" -oX "/home/kali/rp1/results/198.248.86.124/scans/xml/_quick_tcp_nmap.xml" 198.248.86.124
+```
+
+[/home/kali/rp1/results/198.248.86.124/scans/_quick_tcp_nmap.txt](file:///home/kali/rp1/results/198.248.86.124/scans/_quick_tcp_nmap.txt):
+
+```
 # Nmap 7.95 scan initiated Fri May  2 18:59:37 2025 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/kali/rp1/results/198.248.86.124/scans/_quick_tcp_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/xml/_quick_tcp_nmap.xml 198.248.86.124
 Nmap scan report for 198.248.86.124
 Host is up, received user-set (0.039s latency).
@@ -92,3 +99,5 @@ HOP RTT    ADDRESS
 Read data files from: /usr/share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 # Nmap done at Fri May  2 19:00:29 2025 -- 1 IP address (1 host up) scanned in 52.35 seconds
+
+```

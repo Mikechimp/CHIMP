@@ -1,15 +1,17 @@
-import openai
+from openai import OpenAI
 import os
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# Load API key from environment variable or .env file (recommended)
+# Make sure OPENAI_API_KEY is set before running, or replace below with a string key.
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def summarize_scan(scan_output):
-    response = openai.ChatCompletion.create(
+def summarize_scan(prompt):
+    response = client.chat.completions.create(
         model="gpt-4",
         messages=[
-            {"role": "system", "content": "You are a cybersecurity assistant."},
-            {"role": "user", "content": f"Here is a port scan result:\n{scan_output}\n\nSummarize the findings."}
+            {"role": "system", "content": "You are a cybersecurity assistant who summarizes Nmap scan results."},
+            {"role": "user", "content": prompt}
         ]
     )
-    return response['choices'][0]['message']['content']
+    return response.choices[0].message.content
 

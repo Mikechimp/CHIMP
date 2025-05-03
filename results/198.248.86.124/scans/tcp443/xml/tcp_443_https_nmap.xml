@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Fri May  2 19:40:12 2025 as: /usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/rp1/results/198.248.86.124/scans/tcp443/tcp_443_https_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/tcp443/xml/tcp_443_https_nmap.xml 198.248.86.124 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -p 443 &quot;-&#45;script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)&quot; -oN /home/kali/rp1/results/198.248.86.124/scans/tcp443/tcp_443_https_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/tcp443/xml/tcp_443_https_nmap.xml 198.248.86.124" start="1746229212" startstr="Fri May  2 19:40:12 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1746229212"/>
+<taskend task="NSE" time="1746229212"/>
+<taskbegin task="NSE" time="1746229212"/>
+<taskend task="NSE" time="1746229212"/>
+<taskbegin task="NSE" time="1746229212"/>
+<taskend task="NSE" time="1746229212"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1746229212"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1746229212"/>
+<taskbegin task="SYN Stealth Scan" time="1746229212"/>
+<taskend task="SYN Stealth Scan" time="1746229212" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1746229212"/>
+<taskend task="Service scan" time="1746229225" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1746229225"/>
+<taskprogress task="NSE" time="1746229257" percent="96.77" remaining="2" etc="1746229258"/>
+<taskend task="NSE" time="1746229273"/>
+<taskbegin task="NSE" time="1746229273"/>
+<taskend task="NSE" time="1746229284"/>
+<taskbegin task="NSE" time="1746229284"/>
+<taskend task="NSE" time="1746229285"/>
+<host starttime="1746229212" endtime="1746229285"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="198.248.86.124" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=198.248.86.124&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Form id: ksu-search-box&#xa;    Form action: https://search.k-state.edu/&#xa;"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="http-php-version" output="Logo query returned unknown hash b24d83ac7326865c463d043125d0bd55&#xa;Credits query returned unknown hash b24d83ac7326865c463d043125d0bd55"/><script id="http-drupal-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args number=&lt;number|all&gt; for deeper analysis)"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-wordpress-enum" output="Nothing found amongst the top 100 resources,use -&#45;script-args search-limit=&lt;number|all&gt; for deeper analysis)"/><script id="http-vuln-cve2011-3192" output="&#xa;  VULNERABLE:&#xa;  Apache byterange filter DoS&#xa;    State: VULNERABLE&#xa;    IDs:  BID:49303  CVE:CVE-2011-3192&#xa;      The Apache web server is vulnerable to a denial of service attack when numerous&#xa;      overlapping byte ranges are requested.&#xa;    Disclosure date: 2011-08-19&#xa;    References:&#xa;      https://seclists.org/fulldisclosure/2011/Aug/175&#xa;      https://www.securityfocus.com/bid/49303&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192&#xa;      https://www.tenable.com/plugins/nessus/55976&#xa;"><table key="CVE-2011-3192">
+<elem key="title">Apache byterange filter DoS</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>BID:49303</elem>
+<elem>CVE:CVE-2011-3192</elem>
+</table>
+<table key="description">
+<elem>The Apache web server is vulnerable to a denial of service attack when numerous&#xa;overlapping byte ranges are requested.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2011</elem>
+<elem key="day">19</elem>
+<elem key="month">08</elem>
+</table>
+</table>
+<elem key="disclosure">2011-08-19</elem>
+<table key="refs">
+<elem>https://seclists.org/fulldisclosure/2011/Aug/175</elem>
+<elem>https://www.securityfocus.com/bid/49303</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192</elem>
+<elem>https://www.tenable.com/plugins/nessus/55976</elem>
+</table>
+</table>
+</script><script id="http-date" output="Fri, 02 May 2025 23:40:28 GMT; -6s from local time."><elem key="date">2025-05-02T23:40:28+00:00</elem>
+<elem key="delta">-6.0</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    Other: 1&#xa;"/><script id="http-chrono" output="Request times for /; avg: 300.52ms; min: 248.30ms; max: 322.36ms"/><script id="http-vhosts" output="&#xa;75 names had status 200&#xa;53 names had status ERROR"/><script id="ssl-enum-ciphers" output="&#xa;  TLSv1.2: &#xa;    ciphers: &#xa;      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256 (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (ecdh_x25519) - A&#xa;      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (ecdh_x25519) - A&#xa;      TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_256_CCM_8 (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_256_CCM (rsa 4096) - A&#xa;      TLS_RSA_WITH_ARIA_256_GCM_SHA384 (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_128_CCM_8 (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_128_CCM (rsa 4096) - A&#xa;      TLS_RSA_WITH_ARIA_128_GCM_SHA256 (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 4096) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256 (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 4096) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256 (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_256_CBC_SHA (rsa 4096) - A&#xa;      TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 4096) - A&#xa;      TLS_RSA_WITH_AES_128_CBC_SHA (rsa 4096) - A&#xa;      TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 4096) - A&#xa;    compressors: &#xa;      NULL&#xa;    cipher preference: server&#xa;    warnings: &#xa;      Key exchange (ecdh_x25519) of lower strength than certificate key&#xa;  least strength: A"><table key="TLSv1.2">
+<table key="ciphers">
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">ecdh_x25519</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_256_GCM_SHA384</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_256_CCM_8</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_256_CCM</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_ARIA_256_GCM_SHA384</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_128_GCM_SHA256</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_128_CCM_8</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_128_CCM</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_ARIA_128_GCM_SHA256</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA256</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA256</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_256_CBC_SHA</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_AES_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+<table>
+<elem key="name">TLS_RSA_WITH_CAMELLIA_128_CBC_SHA</elem>
+<elem key="kex_info">rsa 4096</elem>
+<elem key="strength">A</elem>
+</table>
+</table>
+<table key="compressors">
+<elem>NULL</elem>
+</table>
+<elem key="cipher preference">server</elem>
+<table key="warnings">
+<elem>Key exchange (ecdh_x25519) of lower strength than certificate key</elem>
+</table>
+</table>
+<elem key="least strength">A</elem>
+</script><script id="http-enum" output="&#xa;  /admin/: Possible admin folder&#xa;  /admin/index.php: Possible admin folder&#xa;"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=198.248.86.124&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 174&#xa;    Comment: &#xa;        &#xa;        //SPEEDTEST AND UI CODE&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 22&#xa;    Comment: &#xa;        &lt;!-&#45; 57\xC3\x9757px -&#45;&gt;&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 140&#xa;    Comment: &#xa;        &#xa;        //CODE FOR GAUGES&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 235&#xa;    Comment: &#xa;         //start frame loop&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 225&#xa;    Comment: &#xa;        &#xa;        //poll the status from the worker (this will call updateUI)&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 229&#xa;    Comment: &#xa;        &#xa;        //update the UI every frame&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 189&#xa;    Comment: &#xa;         //Add optional parameters (see doc.md)&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 188&#xa;    Comment: &#xa;         //w.postMessage(&apos;start&apos;); //Add optional parameters as a JSON object to this command&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 208&#xa;    Comment: &#xa;        &#xa;        //this function reads the data sent back by the worker and updates the UI&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 308&#xa;    Comment: &#xa;        &lt;!-&#45; &lt;a href=&quot;https://github.com/adolfintel/speedtest&quot;&gt;Source code&lt;/a&gt;   -&#45;&gt;&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 175&#xa;    Comment: &#xa;         //speedtest worker&#xa;    &#xa;    Path: https://198.248.86.124:443/&#xa;    Line number: 176&#xa;    Comment: &#xa;         //data from worker&#xa;"/><script id="http-security-headers" output="&#xa;  Strict_Transport_Security: &#xa;    HSTS not configured in HTTPS Server"><table key="Strict_Transport_Security">
+<elem>HSTS not configured in HTTPS Server</elem>
+</table>
+</script><script id="http-headers" output="&#xa;  Server: nginx/1.18.0 (Ubuntu)&#xa;  Date: Fri, 02 May 2025 23:40:36 GMT&#xa;  Content-Type: text/html&#xa;  Content-Length: 10382&#xa;  Last-Modified: Wed, 15 Nov 2017 17:43:48 GMT&#xa;  Connection: close&#xa;  ETag: &quot;5a0c7cd4-288e&quot;&#xa;  Accept-Ranges: bytes&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-vuln-cve2014-3704" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-title" output="Speedtest | Kansas State University"><elem key="title">Speedtest | Kansas State University</elem>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=speedtest.ksu.edu/organizationName=Kansas State University/stateOrProvinceName=Kansas/countryName=US&#xa;Subject Alternative Name: DNS:speedtest.ksu.edu, DNS:speedtest.k-state.edu, DNS:www.speedtest.k-state.edu, DNS:www.speedtest.ksu.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-07-15T00:00:00&#xa;Not valid after:  2025-08-15T23:59:59&#xa;MD5:     5cd9:c786:bc49:5498:55a4:465e:5852:a515&#xa;SHA-1:   05ea:58a6:5548:a823:b6e4:8df4:1f00:e84a:fcf5:6e95&#xa;SHA-256: 1f94:e36d:e720:16cb:40c4:9ac5:540a:111d:c55b:fc41:5780:3591:ab9b:90fa:3d80:32d9&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIFDCCBnygAwIBAgIQNFFMd5lOJakT3ak1NSaxFTANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNzE1MDAwMDAwWhcNMjUwODE1MjM1&#xa;OTU5WjBcMQswCQYDVQQGEwJVUzEPMA0GA1UECBMGS2Fuc2FzMSAwHgYDVQQKExdL&#xa;YW5zYXMgU3RhdGUgVW5pdmVyc2l0eTEaMBgGA1UEAxMRc3BlZWR0ZXN0LmtzdS5l&#xa;ZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDC8ytISuHHxKrGXLd5&#xa;8B2tn1JvnsmeHiomnHMpjT6qmt6PJD8SVb8+yRvca373NBPKj0716jEw4j7sQ3HL&#xa;Vla4GSgrJZb7X6Uq5Mq4KL5OzjnY9R1LimMDmMQIoMvskxNd5+FUUMyvaSMPOD2G&#xa;T9F2YtRF4qCS49EdmhqWEXyBb4r8Da+MDKmSpeVsQOgqX77PPz5HvtYbwcEmVTOP&#xa;fI5oojUPYcZfhoSEDKubQu5lKJC3KCOh4kW/o+3VOEuI7s9/HX39sQvYGIM1esC5&#xa;uoIiqlM41ay0SmM518Evs3qBMfTNZZytTqUiWoO+5LhHLWqOl4XWTOmp/wGkkTZ9&#xa;F4JGu9dBCMSW6+i50iIms+Eo4vFEv20VggDNuv0COp4NFF0JfLmZEs6CnUW13ce6&#xa;lcskLpRiLrZxVWOnjLfGX8rnouWNacI0jgQ58Pzhu4tgHf3uarzVvWkzQg6o8nIu&#xa;lJSC4XtW++F/95nKEKegdsXc+XHn6FuyhLLDkbNdoiByJuSvhqwm9sjmYbllGM14&#xa;LYgFf9vqEVU+t8HlqHdWBUChq150IqUJV8QCEgrmq9BnHCh75EU2YN/wRZXjwALs&#xa;hrLFjeH+e9LFSQPCEpQXyghAXKg/vLsIHJ4cDeNsKzo95XyC4CBSDZ6B7kNhpHMD&#xa;mvRjpQN9weVC/hVn1+g4kNVvxwIDAQABo4IDaDCCA2QwHwYDVR0jBBgwFoAU70wA&#xa;kqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFDY+snkPJo1TM1yuBr+HE54hclhC&#xa;MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUF&#xa;BwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJnMCUwIwYIKwYB&#xa;BQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECAjBABgNVHR8E&#xa;OTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28uY29tL0luQ29tbW9uUlNBU2Vy&#xa;dmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYIKwYBBQUHMAKGL2h0dHA6Ly9j&#xa;cnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3J0MCMGCCsGAQUF&#xa;BzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX0GCisGAQQB1nkCBAIEggFt&#xa;BIIBaQFnAHcA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGQt8C2&#xa;AwAABAMASDBGAiEA181/HaJoynjQDB1isL75luVCGvRxKkLjXBo3AOKhwMwCIQCT&#xa;VnzS8/ff5TooakFsSwNRS6mxAOf3DLdqsailWTlkZgB1AA3h8jAr0w3BQGISCepV&#xa;LvxHdHyx1+kw7w5CHrR+Tqo0AAABkLfAte8AAAQDAEYwRAIgd6M6phaAhkHD+Prh&#xa;RHASmJ7cYXKse+yqvj/5HT0EU+wCICIPIP4Xw8cra9fEUwBwtAhG1+ogrzJ//APX&#xa;yZTt7LM+AHUAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE6+WGJjoAAAGQt8C1&#xa;4wAABAMARjBEAiBuN/gzvvkIZ6DXMBA5txqXaITDkNLd80ez/DwQyw0L7AIgek0x&#xa;oknqJ25rcCN+w361ZYaGmvMq/xPsEn83kewBQEwwZQYDVR0RBF4wXIIRc3BlZWR0&#xa;ZXN0LmtzdS5lZHWCFXNwZWVkdGVzdC5rLXN0YXRlLmVkdYIZd3d3LnNwZWVkdGVz&#xa;dC5rLXN0YXRlLmVkdYIVd3d3LnNwZWVkdGVzdC5rc3UuZWR1MA0GCSqGSIb3DQEB&#xa;DAUAA4IBgQAakQD486vnIf8f72N/x+6bfiwaBiaBNyVd4U9CNBIUm75ObSDTWl5i&#xa;PvAOS92lLoDyKmYY55nCoXTnG8ki3qYs6dWmMB3WdYR7FlPhYsz+TY1y9mxJshkB&#xa;NoaWi1/+I/2VJ8mFnIwMkLKgOgYO6Qbs2EI6UqlPCOA1cXSPv63v45j/DThf+Mdk&#xa;CDNMVlWvPXpoAQnxoKgiquS/3mg98n5MhDJ0mpp6rTdHPbsWiClaTdoYN/00ky6W&#xa;R5grYsTXmWrEEywA2f3DAuZhWazylFEfEGVXkuS8hluxZdze63doQ28Q5V45vC9w&#xa;aCHD65BngXXjik8OKg3qb0LzBVmrBVY57ZO+8agPDkBRfS3VFyaQx1BSArXNIyQn&#xa;c45Q0VEVqGiK9GmdDaBAjgpDBOeErDV0N6nm8PLz54kE+RUjppLseb4a2u9qBeGf&#xa;QXP4RVQt+82vBP69T7ZqyrEq6kEvbaGOZYXn+t15sgbIDX3v/SJCo1CITlHjB2Tb&#xa;9XekzCG5AZY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">speedtest.ksu.edu</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Kansas State University</elem>
+<elem key="stateOrProvinceName">Kansas</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">C2F32B484AE1C7C4AAC65CB779F01DAD9F526F9EC99E1E2A269C73298D3EAA9ADE8F243F1255BF3EC91BDC6B7EF73413CA8F4EF5EA3130E23EEC4371CB5656B819282B2596FB5FA52AE4CAB828BE4ECE39D8F51D4B8A630398C408A0CBEC93135DE7E15450CCAF69230F383D864FD17662D445E2A092E3D11D9A1A96117C816F8AFC0DAF8C0CA992A5E56C40E82A5FBECF3F3E47BED61BC1C12655338F7C8E68A2350F61C65F8684840CAB9B42EE652890B72823A1E245BFA3EDD5384B88EECF7F1D7DFDB10BD81883357AC0B9BA8222AA5338D5ACB44A6339D7C12FB37A8131F4CD659CAD4EA5225A83BEE4B8472D6A8E9785D64CE9A9FF01A491367D178246BBD74108C496EBE8B9D22226B3E128E2F144BF6D158200CDBAFD023A9E0D145D097CB99912CE829D45B5DDC7BA95CB242E94622EB6715563A78CB7C65FCAE7A2E58D69C2348E0439F0FCE1BB8B601DFDEE6ABCD5BD6933420EA8F2722E949482E17B56FBE17FF799CA10A7A076C5DCF971E7E85BB284B2C391B35DA2207226E4AF86AC26F6C8E661B96518CD782D88057FDBEA11553EB7C1E5A877560540A1AB5E7422A50957C402120AE6ABD0671C287BE4453660DFF04595E3C002EC86B2C58DE1FE7BD2C54903C2129417CA08405CA83FBCBB081C9E1C0DE36C2B3A3DE57C82E020520D9E81EE4361A473039AF463A5037DC1E542FE1567D7E83890D56FC7</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">36:3E:B2:79:0F:26:8D:53:33:5C:AE:06:BF:87:13:9E:21:72:58:42</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul 15 18:56:18.435 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:D7:CD:7F:1D:A2:68:CA:78:D0:0C:1D:&#xa;                62:B0:BE:F9:96:E5:42:1A:F4:71:2A:42:E3:5C:1A:37:&#xa;                00:E2:A1:C0:CC:02:21:00:93:56:7C:D2:F3:F7:DF:E5:&#xa;                3A:28:6A:41:6C:4B:03:51:4B:A9:B1:00:E7:F7:0C:B7:&#xa;                6A:B1:A8:A5:59:39:64:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul 15 18:56:18.415 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:77:A3:3A:A6:16:80:86:41:C3:F8:FA:E1:&#xa;                44:70:12:98:9E:DC:61:72:AC:7B:EC:AA:BE:3F:F9:1D:&#xa;                3D:04:53:EC:02:20:22:0F:20:FE:17:C3:C7:2B:6B:D7:&#xa;                C4:53:00:70:B4:08:46:D7:EA:20:AF:32:7F:FC:03:D7:&#xa;                C9:94:ED:EC:B3:3E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul 15 18:56:18.403 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:6E:37:F8:33:BE:F9:08:67:A0:D7:30:10:&#xa;                39:B7:1A:97:68:84:C3:90:D2:DD:F3:47:B3:FC:3C:10:&#xa;                CB:0D:0B:EC:02:20:7A:4D:31:A2:49:EA:27:6E:6B:70:&#xa;                23:7E:C3:7E:B5:65:86:86:9A:F3:2A:FF:13:EC:12:7F:&#xa;                37:91:EC:01:40:4C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:speedtest.ksu.edu, DNS:speedtest.k-state.edu, DNS:www.speedtest.k-state.edu, DNS:www.speedtest.ksu.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-15T00:00:00</elem>
+<elem key="notAfter">2025-08-15T23:59:59</elem>
+</table>
+<elem key="md5">5cd9c786bc49549855a4465e5852a515</elem>
+<elem key="sha1">05ea58a65548a823b6e48df41f00e84afcf56e95</elem>
+<elem key="sha256">1f94e36de72016cb40c49ac5540a111dc55bfc4157803591ab9b90fa3d8032d9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIFDCCBnygAwIBAgIQNFFMd5lOJakT3ak1NSaxFTANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNzE1MDAwMDAwWhcNMjUwODE1MjM1&#xa;OTU5WjBcMQswCQYDVQQGEwJVUzEPMA0GA1UECBMGS2Fuc2FzMSAwHgYDVQQKExdL&#xa;YW5zYXMgU3RhdGUgVW5pdmVyc2l0eTEaMBgGA1UEAxMRc3BlZWR0ZXN0LmtzdS5l&#xa;ZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDC8ytISuHHxKrGXLd5&#xa;8B2tn1JvnsmeHiomnHMpjT6qmt6PJD8SVb8+yRvca373NBPKj0716jEw4j7sQ3HL&#xa;Vla4GSgrJZb7X6Uq5Mq4KL5OzjnY9R1LimMDmMQIoMvskxNd5+FUUMyvaSMPOD2G&#xa;T9F2YtRF4qCS49EdmhqWEXyBb4r8Da+MDKmSpeVsQOgqX77PPz5HvtYbwcEmVTOP&#xa;fI5oojUPYcZfhoSEDKubQu5lKJC3KCOh4kW/o+3VOEuI7s9/HX39sQvYGIM1esC5&#xa;uoIiqlM41ay0SmM518Evs3qBMfTNZZytTqUiWoO+5LhHLWqOl4XWTOmp/wGkkTZ9&#xa;F4JGu9dBCMSW6+i50iIms+Eo4vFEv20VggDNuv0COp4NFF0JfLmZEs6CnUW13ce6&#xa;lcskLpRiLrZxVWOnjLfGX8rnouWNacI0jgQ58Pzhu4tgHf3uarzVvWkzQg6o8nIu&#xa;lJSC4XtW++F/95nKEKegdsXc+XHn6FuyhLLDkbNdoiByJuSvhqwm9sjmYbllGM14&#xa;LYgFf9vqEVU+t8HlqHdWBUChq150IqUJV8QCEgrmq9BnHCh75EU2YN/wRZXjwALs&#xa;hrLFjeH+e9LFSQPCEpQXyghAXKg/vLsIHJ4cDeNsKzo95XyC4CBSDZ6B7kNhpHMD&#xa;mvRjpQN9weVC/hVn1+g4kNVvxwIDAQABo4IDaDCCA2QwHwYDVR0jBBgwFoAU70wA&#xa;kqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFDY+snkPJo1TM1yuBr+HE54hclhC&#xa;MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUF&#xa;BwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJnMCUwIwYIKwYB&#xa;BQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECAjBABgNVHR8E&#xa;OTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28uY29tL0luQ29tbW9uUlNBU2Vy&#xa;dmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYIKwYBBQUHMAKGL2h0dHA6Ly9j&#xa;cnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3J0MCMGCCsGAQUF&#xa;BzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX0GCisGAQQB1nkCBAIEggFt&#xa;BIIBaQFnAHcA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGQt8C2&#xa;AwAABAMASDBGAiEA181/HaJoynjQDB1isL75luVCGvRxKkLjXBo3AOKhwMwCIQCT&#xa;VnzS8/ff5TooakFsSwNRS6mxAOf3DLdqsailWTlkZgB1AA3h8jAr0w3BQGISCepV&#xa;LvxHdHyx1+kw7w5CHrR+Tqo0AAABkLfAte8AAAQDAEYwRAIgd6M6phaAhkHD+Prh&#xa;RHASmJ7cYXKse+yqvj/5HT0EU+wCICIPIP4Xw8cra9fEUwBwtAhG1+ogrzJ//APX&#xa;yZTt7LM+AHUAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE6+WGJjoAAAGQt8C1&#xa;4wAABAMARjBEAiBuN/gzvvkIZ6DXMBA5txqXaITDkNLd80ez/DwQyw0L7AIgek0x&#xa;oknqJ25rcCN+w361ZYaGmvMq/xPsEn83kewBQEwwZQYDVR0RBF4wXIIRc3BlZWR0&#xa;ZXN0LmtzdS5lZHWCFXNwZWVkdGVzdC5rLXN0YXRlLmVkdYIZd3d3LnNwZWVkdGVz&#xa;dC5rLXN0YXRlLmVkdYIVd3d3LnNwZWVkdGVzdC5rc3UuZWR1MA0GCSqGSIb3DQEB&#xa;DAUAA4IBgQAakQD486vnIf8f72N/x+6bfiwaBiaBNyVd4U9CNBIUm75ObSDTWl5i&#xa;PvAOS92lLoDyKmYY55nCoXTnG8ki3qYs6dWmMB3WdYR7FlPhYsz+TY1y9mxJshkB&#xa;NoaWi1/+I/2VJ8mFnIwMkLKgOgYO6Qbs2EI6UqlPCOA1cXSPv63v45j/DThf+Mdk&#xa;CDNMVlWvPXpoAQnxoKgiquS/3mg98n5MhDJ0mpp6rTdHPbsWiClaTdoYN/00ky6W&#xa;R5grYsTXmWrEEywA2f3DAuZhWazylFEfEGVXkuS8hluxZdze63doQ28Q5V45vC9w&#xa;aCHD65BngXXjik8OKg3qb0LzBVmrBVY57ZO+8agPDkBRfS3VFyaQx1BSArXNIyQn&#xa;c45Q0VEVqGiK9GmdDaBAjgpDBOeErDV0N6nm8PLz54kE+RUjppLseb4a2u9qBeGf&#xa;QXP4RVQt+82vBP69T7ZqyrEq6kEvbaGOZYXn+t15sgbIDX3v/SJCo1CITlHjB2Tb&#xa;9XekzCG5AZY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-malware-host" output="Host appears to be clean"/></port>
+</ports>
+<times srtt="34423" rttvar="34423" to="172115"/>
+</host>
+<taskbegin task="NSE" time="1746229285"/>
+<taskend task="NSE" time="1746229285"/>
+<taskbegin task="NSE" time="1746229285"/>
+<taskend task="NSE" time="1746229285"/>
+<taskbegin task="NSE" time="1746229285"/>
+<taskend task="NSE" time="1746229285"/>
+<runstats><finished time="1746229285" timestr="Fri May  2 19:41:25 2025" summary="Nmap done at Fri May  2 19:41:25 2025; 1 IP address (1 host up) scanned in 72.78 seconds" elapsed="72.78" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

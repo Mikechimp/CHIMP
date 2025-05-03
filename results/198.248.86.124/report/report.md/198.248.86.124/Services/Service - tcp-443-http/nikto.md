@@ -1,0 +1,35 @@
+```bash
+nikto -ask=no -Tuning=x4567890ac -nointeractive -host https://198.248.86.124:443 2>&1 | tee "/home/kali/rp1/results/198.248.86.124/scans/tcp443/tcp_443_https_nikto.txt"
+```
+
+[/home/kali/rp1/results/198.248.86.124/scans/tcp443/tcp_443_https_nikto.txt](file:///home/kali/rp1/results/198.248.86.124/scans/tcp443/tcp_443_https_nikto.txt):
+
+```
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          198.248.86.124
++ Target Hostname:    198.248.86.124
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:        Subject:  /C=US/ST=Kansas/O=Kansas State University/CN=speedtest.ksu.edu
+                   Ciphers:  ECDHE-RSA-AES256-GCM-SHA384
+                   Issuer:   /C=US/O=Internet2/CN=InCommon RSA Server CA 2
++ Start Time:         2025-05-02 19:40:12 (GMT-4)
+---------------------------------------------------------------------------
++ Server: nginx/1.18.0 (Ubuntu)
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /: The Content-Encoding header is set to "deflate" which may mean that the server is vulnerable to the BREACH attack. See: http://breachattack.com/
++ Hostname '198.248.86.124' does not match certificate's names: speedtest.ksu.edu. See: https://cwe.mitre.org/data/definitions/297.html
++ nginx/1.18.0 appears to be outdated (current is at least 1.20.1).
++ /admin/: This might be interesting.
++ /admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
++ /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
++ 7740 requests: 0 error(s) and 9 item(s) reported on remote host
++ End Time:           2025-05-02 20:21:03 (GMT-4) (2451 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+```

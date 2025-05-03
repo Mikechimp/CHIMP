@@ -1,19 +1,654 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.95 scan initiated Fri May  2 18:44:20 2025 as: /usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml 198.248.86.124 -->
-<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml 198.248.86.124" start="1746225860" startstr="Fri May  2 18:44:20 2025" version="7.95" xmloutputversion="1.05">
+<!-- Nmap 7.95 scan initiated Fri May  2 18:59:37 2025 as: /usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml 198.248.86.124 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml 198.248.86.124" start="1746226777" startstr="Fri May  2 18:59:37 2025" version="7.95" xmloutputversion="1.05">
 <scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1746225860"/>
-<taskend task="NSE" time="1746225860"/>
-<taskbegin task="NSE" time="1746225860"/>
-<taskend task="NSE" time="1746225860"/>
-<taskbegin task="NSE" time="1746225860"/>
-<taskend task="NSE" time="1746225860"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1746225860"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1746225860"/>
-<taskbegin task="SYN Stealth Scan" time="1746225860"/>
-<taskprogress task="SYN Stealth Scan" time="1746225891" percent="0.45"/>
-<taskprogress task="SYN Stealth Scan" time="1746225921" percent="0.91"/>
+<taskbegin task="NSE" time="1746226777"/>
+<taskend task="NSE" time="1746226777"/>
+<taskbegin task="NSE" time="1746226777"/>
+<taskend task="NSE" time="1746226777"/>
+<taskbegin task="NSE" time="1746226777"/>
+<taskend task="NSE" time="1746226777"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1746226777"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1746226777"/>
+<taskbegin task="SYN Stealth Scan" time="1746226777"/>
+<taskprogress task="SYN Stealth Scan" time="1746226808" percent="0.69"/>
+<taskprogress task="SYN Stealth Scan" time="1746226838" percent="1.24" remaining="4845" etc="1746231682"/>
+<taskprogress task="SYN Stealth Scan" time="1746226868" percent="2.31" remaining="3850" etc="1746230717"/>
+<taskprogress task="SYN Stealth Scan" time="1746226898" percent="3.54" remaining="3299" etc="1746230196"/>
+<taskprogress task="SYN Stealth Scan" time="1746226928" percent="5.26" remaining="2721" etc="1746229648"/>
+<taskprogress task="SYN Stealth Scan" time="1746226958" percent="6.99" remaining="2409" etc="1746229367"/>
+<taskprogress task="SYN Stealth Scan" time="1746226988" percent="8.54" remaining="2261" etc="1746229249"/>
+<taskprogress task="SYN Stealth Scan" time="1746227018" percent="10.23" remaining="2115" etc="1746229132"/>
+<taskprogress task="SYN Stealth Scan" time="1746227048" percent="12.05" remaining="1978" etc="1746229026"/>
+<taskprogress task="SYN Stealth Scan" time="1746227078" percent="13.95" remaining="1857" etc="1746228934"/>
+<taskprogress task="SYN Stealth Scan" time="1746227126" percent="16.69" remaining="1742" etc="1746228868"/>
+<taskprogress task="SYN Stealth Scan" time="1746227171" percent="19.45" remaining="1632" etc="1746228803"/>
+<taskprogress task="SYN Stealth Scan" time="1746227222" percent="22.61" remaining="1524" etc="1746228745"/>
+<taskprogress task="SYN Stealth Scan" time="1746227312" percent="27.36" remaining="1421" etc="1746228733"/>
+<taskprogress task="SYN Stealth Scan" time="1746227402" percent="32.15" remaining="1319" etc="1746228721"/>
+<taskprogress task="SYN Stealth Scan" time="1746227504" percent="37.34" remaining="1220" etc="1746228724"/>
+<taskprogress task="SYN Stealth Scan" time="1746227633" percent="43.35" remaining="1119" etc="1746228751"/>
+<taskprogress task="SYN Stealth Scan" time="1746227744" percent="48.68" remaining="1020" etc="1746228763"/>
+<taskprogress task="SYN Stealth Scan" time="1746227888" percent="54.72" remaining="920" etc="1746228807"/>
+<taskprogress task="SYN Stealth Scan" time="1746228026" percent="60.45" remaining="818" etc="1746228843"/>
+<taskprogress task="SYN Stealth Scan" time="1746228200" percent="66.61" remaining="714" etc="1746228913"/>
+<taskprogress task="SYN Stealth Scan" time="1746228446" percent="73.36" remaining="607" etc="1746229052"/>
+<taskprogress task="SYN Stealth Scan" time="1746228605" percent="78.90" remaining="489" etc="1746229094"/>
+<taskprogress task="SYN Stealth Scan" time="1746228737" percent="84.10" remaining="371" etc="1746229108"/>
+<taskprogress task="SYN Stealth Scan" time="1746228869" percent="89.20" remaining="254" etc="1746229122"/>
+<taskprogress task="SYN Stealth Scan" time="1746229019" percent="94.33" remaining="135" etc="1746229154"/>
+<taskend task="SYN Stealth Scan" time="1746229189" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1746229189"/>
+<taskend task="Service scan" time="1746229202" extrainfo="2 services on 1 host"/>
+<taskbegin task="Traceroute" time="1746229204"/>
+<taskend task="Traceroute" time="1746229204"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1746229204"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1746229204"/>
+<taskbegin task="NSE" time="1746229204"/>
+<taskend task="NSE" time="1746229209"/>
+<taskbegin task="NSE" time="1746229209"/>
+<taskend task="NSE" time="1746229212"/>
+<taskbegin task="NSE" time="1746229212"/>
+<taskend task="NSE" time="1746229212"/>
+<host starttime="1746226777" endtime="1746229212"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="198.248.86.124" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-79,81-442,444-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="vulners" output="&#xa;  nginx 1.18.0: &#xa;    &#x9;2C119FFA-ECE0-5E14-A4A4-354A2C38071A&#x9;10.0&#x9;https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A&#x9;*EXPLOIT*&#xa;    &#x9;3F71F065-66D4-541F-A813-9F1A2F2B1D91&#x9;8.8&#x9;https://vulners.com/githubexploit/3F71F065-66D4-541F-A813-9F1A2F2B1D91&#x9;*EXPLOIT*&#xa;    &#x9;NGINX:CVE-2022-41741&#x9;7.8&#x9;https://vulners.com/nginx/NGINX:CVE-2022-41741&#xa;    &#x9;DF1BBDC4-B715-5ABE-985E-91DD3BB87773&#x9;7.8&#x9;https://vulners.com/githubexploit/DF1BBDC4-B715-5ABE-985E-91DD3BB87773&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2022-41741&#x9;7.8&#x9;https://vulners.com/cve/CVE-2022-41741&#xa;    &#x9;NGINX:CVE-2021-23017&#x9;7.7&#x9;https://vulners.com/nginx/NGINX:CVE-2021-23017&#xa;    &#x9;EDB-ID:50973&#x9;7.7&#x9;https://vulners.com/exploitdb/EDB-ID:50973&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2021-23017&#x9;7.7&#x9;https://vulners.com/cve/CVE-2021-23017&#xa;    &#x9;B175E582-6BBF-5D54-AF15-ED3715F757E3&#x9;7.7&#x9;https://vulners.com/githubexploit/B175E582-6BBF-5D54-AF15-ED3715F757E3&#x9;*EXPLOIT*&#xa;    &#x9;9A14990B-D52A-56B6-966C-6F35C8B8EB9D&#x9;7.7&#x9;https://vulners.com/githubexploit/9A14990B-D52A-56B6-966C-6F35C8B8EB9D&#x9;*EXPLOIT*&#xa;    &#x9;25F34A51-EB79-5BBC-8262-6F1876067F04&#x9;7.7&#x9;https://vulners.com/githubexploit/25F34A51-EB79-5BBC-8262-6F1876067F04&#x9;*EXPLOIT*&#xa;    &#x9;245ACDDD-B1E2-5344-B37D-5B9A0B0A1F0D&#x9;7.7&#x9;https://vulners.com/githubexploit/245ACDDD-B1E2-5344-B37D-5B9A0B0A1F0D&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-37837&#x9;7.7&#x9;https://vulners.com/zdt/1337DAY-ID-37837&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-36300&#x9;7.7&#x9;https://vulners.com/zdt/1337DAY-ID-36300&#x9;*EXPLOIT*&#xa;    &#x9;00455CDF-B814-5424-952E-9088FBB2D42D&#x9;7.7&#x9;https://vulners.com/githubexploit/00455CDF-B814-5424-952E-9088FBB2D42D&#x9;*EXPLOIT*&#xa;    &#x9;F7F6E599-CEF4-5E03-8E10-FE18C4101E38&#x9;7.5&#x9;https://vulners.com/githubexploit/F7F6E599-CEF4-5E03-8E10-FE18C4101E38&#x9;*EXPLOIT*&#xa;    &#x9;E73E445F-0A0D-5966-8A21-C74FE9C0D2BC&#x9;7.5&#x9;https://vulners.com/githubexploit/E73E445F-0A0D-5966-8A21-C74FE9C0D2BC&#x9;*EXPLOIT*&#xa;    &#x9;E5C174E5-D6E8-56E0-8403-D287DE52EB3F&#x9;7.5&#x9;https://vulners.com/githubexploit/E5C174E5-D6E8-56E0-8403-D287DE52EB3F&#x9;*EXPLOIT*&#xa;    &#x9;DB6E1BBD-08B1-574D-A351-7D6BB9898A4A&#x9;7.5&#x9;https://vulners.com/githubexploit/DB6E1BBD-08B1-574D-A351-7D6BB9898A4A&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2023-44487&#x9;7.5&#x9;https://vulners.com/cve/CVE-2023-44487&#xa;    &#x9;C9A1C0C1-B6E3-5955-A4F1-DEA0E505B14B&#x9;7.5&#x9;https://vulners.com/githubexploit/C9A1C0C1-B6E3-5955-A4F1-DEA0E505B14B&#x9;*EXPLOIT*&#xa;    &#x9;BD3652A9-D066-57BA-9943-4E34970463B9&#x9;7.5&#x9;https://vulners.com/githubexploit/BD3652A9-D066-57BA-9943-4E34970463B9&#x9;*EXPLOIT*&#xa;    &#x9;B0B1EF25-DE18-534A-AE5B-E6E87669C1D2&#x9;7.5&#x9;https://vulners.com/githubexploit/B0B1EF25-DE18-534A-AE5B-E6E87669C1D2&#x9;*EXPLOIT*&#xa;    &#x9;B0208442-6E17-5772-B12D-B5BE30FA5540&#x9;7.5&#x9;https://vulners.com/githubexploit/B0208442-6E17-5772-B12D-B5BE30FA5540&#x9;*EXPLOIT*&#xa;    &#x9;A820A056-9F91-5059-B0BC-8D92C7A31A52&#x9;7.5&#x9;https://vulners.com/githubexploit/A820A056-9F91-5059-B0BC-8D92C7A31A52&#x9;*EXPLOIT*&#xa;    &#x9;A66531EB-3C47-5C56-B8A6-E04B54E9D656&#x9;7.5&#x9;https://vulners.com/githubexploit/A66531EB-3C47-5C56-B8A6-E04B54E9D656&#x9;*EXPLOIT*&#xa;    &#x9;9814661A-35A4-5DB7-BB25-A1040F365C81&#x9;7.5&#x9;https://vulners.com/githubexploit/9814661A-35A4-5DB7-BB25-A1040F365C81&#x9;*EXPLOIT*&#xa;    &#x9;788E0E7C-6F5C-5DAD-9E3A-EE6D8A685F7D&#x9;7.5&#x9;https://vulners.com/githubexploit/788E0E7C-6F5C-5DAD-9E3A-EE6D8A685F7D&#x9;*EXPLOIT*&#xa;    &#x9;5A864BCC-B490-5532-83AB-2E4109BB3C31&#x9;7.5&#x9;https://vulners.com/githubexploit/5A864BCC-B490-5532-83AB-2E4109BB3C31&#x9;*EXPLOIT*&#xa;    &#x9;40879618-C556-547C-8769-9E63E83D0B55&#x9;7.5&#x9;https://vulners.com/githubexploit/40879618-C556-547C-8769-9E63E83D0B55&#x9;*EXPLOIT*&#xa;    &#x9;1F6E0709-DA03-564E-925F-3177657C053E&#x9;7.5&#x9;https://vulners.com/githubexploit/1F6E0709-DA03-564E-925F-3177657C053E&#x9;*EXPLOIT*&#xa;    &#x9;17C6AD2A-8469-56C8-BBBE-1764D0DF1680&#x9;7.5&#x9;https://vulners.com/githubexploit/17C6AD2A-8469-56C8-BBBE-1764D0DF1680&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2021-3618&#x9;7.4&#x9;https://vulners.com/cve/CVE-2021-3618&#xa;    &#x9;NGINX:CVE-2022-41742&#x9;7.1&#x9;https://vulners.com/nginx/NGINX:CVE-2022-41742&#xa;    &#x9;CVE-2022-41742&#x9;7.1&#x9;https://vulners.com/cve/CVE-2022-41742&#xa;    &#x9;95499236-C9FE-56A6-9D7D-E943A24B633A&#x9;6.9&#x9;https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:167720&#x9;6.8&#x9;https://vulners.com/packetstorm/PACKETSTORM:167720&#x9;*EXPLOIT*&#xa;    &#x9;NGINX:CVE-2024-7347&#x9;5.7&#x9;https://vulners.com/nginx/NGINX:CVE-2024-7347&#xa;    &#x9;NGINX:CVE-2025-23419&#x9;5.3&#x9;https://vulners.com/nginx/NGINX:CVE-2025-23419&#xa;    &#x9;PACKETSTORM:162830&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:162830&#x9;*EXPLOIT*"><table key="nginx 1.18.0">
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">2C119FFA-ECE0-5E14-A4A4-354A2C38071A</elem>
+</table>
+<table>
+<elem key="cvss">8.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">3F71F065-66D4-541F-A813-9F1A2F2B1D91</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2022-41741</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">DF1BBDC4-B715-5ABE-985E-91DD3BB87773</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2022-41741</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2021-23017</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">exploitdb</elem>
+<elem key="id">EDB-ID:50973</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2021-23017</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">B175E582-6BBF-5D54-AF15-ED3715F757E3</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">9A14990B-D52A-56B6-966C-6F35C8B8EB9D</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">25F34A51-EB79-5BBC-8262-6F1876067F04</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">245ACDDD-B1E2-5344-B37D-5B9A0B0A1F0D</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">zdt</elem>
+<elem key="id">1337DAY-ID-37837</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">zdt</elem>
+<elem key="id">1337DAY-ID-36300</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">00455CDF-B814-5424-952E-9088FBB2D42D</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">F7F6E599-CEF4-5E03-8E10-FE18C4101E38</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">E73E445F-0A0D-5966-8A21-C74FE9C0D2BC</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">E5C174E5-D6E8-56E0-8403-D287DE52EB3F</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">DB6E1BBD-08B1-574D-A351-7D6BB9898A4A</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2023-44487</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">C9A1C0C1-B6E3-5955-A4F1-DEA0E505B14B</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">BD3652A9-D066-57BA-9943-4E34970463B9</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">B0B1EF25-DE18-534A-AE5B-E6E87669C1D2</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">B0208442-6E17-5772-B12D-B5BE30FA5540</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">A820A056-9F91-5059-B0BC-8D92C7A31A52</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">A66531EB-3C47-5C56-B8A6-E04B54E9D656</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">9814661A-35A4-5DB7-BB25-A1040F365C81</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">788E0E7C-6F5C-5DAD-9E3A-EE6D8A685F7D</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">5A864BCC-B490-5532-83AB-2E4109BB3C31</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">40879618-C556-547C-8769-9E63E83D0B55</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">1F6E0709-DA03-564E-925F-3177657C053E</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">17C6AD2A-8469-56C8-BBBE-1764D0DF1680</elem>
+</table>
+<table>
+<elem key="cvss">7.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2021-3618</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2022-41742</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2022-41742</elem>
+</table>
+<table>
+<elem key="cvss">6.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">95499236-C9FE-56A6-9D7D-E943A24B633A</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">packetstorm</elem>
+<elem key="id">PACKETSTORM:167720</elem>
+</table>
+<table>
+<elem key="cvss">5.7</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2024-7347</elem>
+</table>
+<table>
+<elem key="cvss">5.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2025-23419</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">packetstorm</elem>
+<elem key="id">PACKETSTORM:162830</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="vulners" output="&#xa;  nginx 1.18.0: &#xa;    &#x9;2C119FFA-ECE0-5E14-A4A4-354A2C38071A&#x9;10.0&#x9;https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A&#x9;*EXPLOIT*&#xa;    &#x9;3F71F065-66D4-541F-A813-9F1A2F2B1D91&#x9;8.8&#x9;https://vulners.com/githubexploit/3F71F065-66D4-541F-A813-9F1A2F2B1D91&#x9;*EXPLOIT*&#xa;    &#x9;NGINX:CVE-2022-41741&#x9;7.8&#x9;https://vulners.com/nginx/NGINX:CVE-2022-41741&#xa;    &#x9;DF1BBDC4-B715-5ABE-985E-91DD3BB87773&#x9;7.8&#x9;https://vulners.com/githubexploit/DF1BBDC4-B715-5ABE-985E-91DD3BB87773&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2022-41741&#x9;7.8&#x9;https://vulners.com/cve/CVE-2022-41741&#xa;    &#x9;NGINX:CVE-2021-23017&#x9;7.7&#x9;https://vulners.com/nginx/NGINX:CVE-2021-23017&#xa;    &#x9;EDB-ID:50973&#x9;7.7&#x9;https://vulners.com/exploitdb/EDB-ID:50973&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2021-23017&#x9;7.7&#x9;https://vulners.com/cve/CVE-2021-23017&#xa;    &#x9;B175E582-6BBF-5D54-AF15-ED3715F757E3&#x9;7.7&#x9;https://vulners.com/githubexploit/B175E582-6BBF-5D54-AF15-ED3715F757E3&#x9;*EXPLOIT*&#xa;    &#x9;9A14990B-D52A-56B6-966C-6F35C8B8EB9D&#x9;7.7&#x9;https://vulners.com/githubexploit/9A14990B-D52A-56B6-966C-6F35C8B8EB9D&#x9;*EXPLOIT*&#xa;    &#x9;25F34A51-EB79-5BBC-8262-6F1876067F04&#x9;7.7&#x9;https://vulners.com/githubexploit/25F34A51-EB79-5BBC-8262-6F1876067F04&#x9;*EXPLOIT*&#xa;    &#x9;245ACDDD-B1E2-5344-B37D-5B9A0B0A1F0D&#x9;7.7&#x9;https://vulners.com/githubexploit/245ACDDD-B1E2-5344-B37D-5B9A0B0A1F0D&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-37837&#x9;7.7&#x9;https://vulners.com/zdt/1337DAY-ID-37837&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-36300&#x9;7.7&#x9;https://vulners.com/zdt/1337DAY-ID-36300&#x9;*EXPLOIT*&#xa;    &#x9;00455CDF-B814-5424-952E-9088FBB2D42D&#x9;7.7&#x9;https://vulners.com/githubexploit/00455CDF-B814-5424-952E-9088FBB2D42D&#x9;*EXPLOIT*&#xa;    &#x9;F7F6E599-CEF4-5E03-8E10-FE18C4101E38&#x9;7.5&#x9;https://vulners.com/githubexploit/F7F6E599-CEF4-5E03-8E10-FE18C4101E38&#x9;*EXPLOIT*&#xa;    &#x9;E73E445F-0A0D-5966-8A21-C74FE9C0D2BC&#x9;7.5&#x9;https://vulners.com/githubexploit/E73E445F-0A0D-5966-8A21-C74FE9C0D2BC&#x9;*EXPLOIT*&#xa;    &#x9;E5C174E5-D6E8-56E0-8403-D287DE52EB3F&#x9;7.5&#x9;https://vulners.com/githubexploit/E5C174E5-D6E8-56E0-8403-D287DE52EB3F&#x9;*EXPLOIT*&#xa;    &#x9;DB6E1BBD-08B1-574D-A351-7D6BB9898A4A&#x9;7.5&#x9;https://vulners.com/githubexploit/DB6E1BBD-08B1-574D-A351-7D6BB9898A4A&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2023-44487&#x9;7.5&#x9;https://vulners.com/cve/CVE-2023-44487&#xa;    &#x9;C9A1C0C1-B6E3-5955-A4F1-DEA0E505B14B&#x9;7.5&#x9;https://vulners.com/githubexploit/C9A1C0C1-B6E3-5955-A4F1-DEA0E505B14B&#x9;*EXPLOIT*&#xa;    &#x9;BD3652A9-D066-57BA-9943-4E34970463B9&#x9;7.5&#x9;https://vulners.com/githubexploit/BD3652A9-D066-57BA-9943-4E34970463B9&#x9;*EXPLOIT*&#xa;    &#x9;B0B1EF25-DE18-534A-AE5B-E6E87669C1D2&#x9;7.5&#x9;https://vulners.com/githubexploit/B0B1EF25-DE18-534A-AE5B-E6E87669C1D2&#x9;*EXPLOIT*&#xa;    &#x9;B0208442-6E17-5772-B12D-B5BE30FA5540&#x9;7.5&#x9;https://vulners.com/githubexploit/B0208442-6E17-5772-B12D-B5BE30FA5540&#x9;*EXPLOIT*&#xa;    &#x9;A820A056-9F91-5059-B0BC-8D92C7A31A52&#x9;7.5&#x9;https://vulners.com/githubexploit/A820A056-9F91-5059-B0BC-8D92C7A31A52&#x9;*EXPLOIT*&#xa;    &#x9;A66531EB-3C47-5C56-B8A6-E04B54E9D656&#x9;7.5&#x9;https://vulners.com/githubexploit/A66531EB-3C47-5C56-B8A6-E04B54E9D656&#x9;*EXPLOIT*&#xa;    &#x9;9814661A-35A4-5DB7-BB25-A1040F365C81&#x9;7.5&#x9;https://vulners.com/githubexploit/9814661A-35A4-5DB7-BB25-A1040F365C81&#x9;*EXPLOIT*&#xa;    &#x9;788E0E7C-6F5C-5DAD-9E3A-EE6D8A685F7D&#x9;7.5&#x9;https://vulners.com/githubexploit/788E0E7C-6F5C-5DAD-9E3A-EE6D8A685F7D&#x9;*EXPLOIT*&#xa;    &#x9;5A864BCC-B490-5532-83AB-2E4109BB3C31&#x9;7.5&#x9;https://vulners.com/githubexploit/5A864BCC-B490-5532-83AB-2E4109BB3C31&#x9;*EXPLOIT*&#xa;    &#x9;40879618-C556-547C-8769-9E63E83D0B55&#x9;7.5&#x9;https://vulners.com/githubexploit/40879618-C556-547C-8769-9E63E83D0B55&#x9;*EXPLOIT*&#xa;    &#x9;1F6E0709-DA03-564E-925F-3177657C053E&#x9;7.5&#x9;https://vulners.com/githubexploit/1F6E0709-DA03-564E-925F-3177657C053E&#x9;*EXPLOIT*&#xa;    &#x9;17C6AD2A-8469-56C8-BBBE-1764D0DF1680&#x9;7.5&#x9;https://vulners.com/githubexploit/17C6AD2A-8469-56C8-BBBE-1764D0DF1680&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2021-3618&#x9;7.4&#x9;https://vulners.com/cve/CVE-2021-3618&#xa;    &#x9;NGINX:CVE-2022-41742&#x9;7.1&#x9;https://vulners.com/nginx/NGINX:CVE-2022-41742&#xa;    &#x9;CVE-2022-41742&#x9;7.1&#x9;https://vulners.com/cve/CVE-2022-41742&#xa;    &#x9;95499236-C9FE-56A6-9D7D-E943A24B633A&#x9;6.9&#x9;https://vulners.com/githubexploit/95499236-C9FE-56A6-9D7D-E943A24B633A&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:167720&#x9;6.8&#x9;https://vulners.com/packetstorm/PACKETSTORM:167720&#x9;*EXPLOIT*&#xa;    &#x9;NGINX:CVE-2024-7347&#x9;5.7&#x9;https://vulners.com/nginx/NGINX:CVE-2024-7347&#xa;    &#x9;NGINX:CVE-2025-23419&#x9;5.3&#x9;https://vulners.com/nginx/NGINX:CVE-2025-23419&#xa;    &#x9;PACKETSTORM:162830&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:162830&#x9;*EXPLOIT*"><table key="nginx 1.18.0">
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">2C119FFA-ECE0-5E14-A4A4-354A2C38071A</elem>
+</table>
+<table>
+<elem key="cvss">8.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">3F71F065-66D4-541F-A813-9F1A2F2B1D91</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2022-41741</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">DF1BBDC4-B715-5ABE-985E-91DD3BB87773</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2022-41741</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2021-23017</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">exploitdb</elem>
+<elem key="id">EDB-ID:50973</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2021-23017</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">B175E582-6BBF-5D54-AF15-ED3715F757E3</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">9A14990B-D52A-56B6-966C-6F35C8B8EB9D</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">25F34A51-EB79-5BBC-8262-6F1876067F04</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">245ACDDD-B1E2-5344-B37D-5B9A0B0A1F0D</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">zdt</elem>
+<elem key="id">1337DAY-ID-37837</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">zdt</elem>
+<elem key="id">1337DAY-ID-36300</elem>
+</table>
+<table>
+<elem key="cvss">7.7</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">00455CDF-B814-5424-952E-9088FBB2D42D</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">F7F6E599-CEF4-5E03-8E10-FE18C4101E38</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">E73E445F-0A0D-5966-8A21-C74FE9C0D2BC</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">E5C174E5-D6E8-56E0-8403-D287DE52EB3F</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">DB6E1BBD-08B1-574D-A351-7D6BB9898A4A</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2023-44487</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">C9A1C0C1-B6E3-5955-A4F1-DEA0E505B14B</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">BD3652A9-D066-57BA-9943-4E34970463B9</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">B0B1EF25-DE18-534A-AE5B-E6E87669C1D2</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">B0208442-6E17-5772-B12D-B5BE30FA5540</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">A820A056-9F91-5059-B0BC-8D92C7A31A52</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">A66531EB-3C47-5C56-B8A6-E04B54E9D656</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">9814661A-35A4-5DB7-BB25-A1040F365C81</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">788E0E7C-6F5C-5DAD-9E3A-EE6D8A685F7D</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">5A864BCC-B490-5532-83AB-2E4109BB3C31</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">40879618-C556-547C-8769-9E63E83D0B55</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">1F6E0709-DA03-564E-925F-3177657C053E</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">17C6AD2A-8469-56C8-BBBE-1764D0DF1680</elem>
+</table>
+<table>
+<elem key="cvss">7.4</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2021-3618</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2022-41742</elem>
+</table>
+<table>
+<elem key="cvss">7.1</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">cve</elem>
+<elem key="id">CVE-2022-41742</elem>
+</table>
+<table>
+<elem key="cvss">6.9</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">githubexploit</elem>
+<elem key="id">95499236-C9FE-56A6-9D7D-E943A24B633A</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">packetstorm</elem>
+<elem key="id">PACKETSTORM:167720</elem>
+</table>
+<table>
+<elem key="cvss">5.7</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2024-7347</elem>
+</table>
+<table>
+<elem key="cvss">5.3</elem>
+<elem key="is_exploit">false</elem>
+<elem key="type">nginx</elem>
+<elem key="id">NGINX:CVE-2025-23419</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="is_exploit">true</elem>
+<elem key="type">packetstorm</elem>
+<elem key="id">PACKETSTORM:162830</elem>
+</table>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=speedtest.ksu.edu/organizationName=Kansas State University/stateOrProvinceName=Kansas/countryName=US&#xa;Subject Alternative Name: DNS:speedtest.ksu.edu, DNS:speedtest.k-state.edu, DNS:www.speedtest.k-state.edu, DNS:www.speedtest.ksu.edu&#xa;Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha384WithRSAEncryption&#xa;Not valid before: 2024-07-15T00:00:00&#xa;Not valid after:  2025-08-15T23:59:59&#xa;MD5:     5cd9:c786:bc49:5498:55a4:465e:5852:a515&#xa;SHA-1:   05ea:58a6:5548:a823:b6e4:8df4:1f00:e84a:fcf5:6e95&#xa;SHA-256: 1f94:e36d:e720:16cb:40c4:9ac5:540a:111d:c55b:fc41:5780:3591:ab9b:90fa:3d80:32d9&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIFDCCBnygAwIBAgIQNFFMd5lOJakT3ak1NSaxFTANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNzE1MDAwMDAwWhcNMjUwODE1MjM1&#xa;OTU5WjBcMQswCQYDVQQGEwJVUzEPMA0GA1UECBMGS2Fuc2FzMSAwHgYDVQQKExdL&#xa;YW5zYXMgU3RhdGUgVW5pdmVyc2l0eTEaMBgGA1UEAxMRc3BlZWR0ZXN0LmtzdS5l&#xa;ZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDC8ytISuHHxKrGXLd5&#xa;8B2tn1JvnsmeHiomnHMpjT6qmt6PJD8SVb8+yRvca373NBPKj0716jEw4j7sQ3HL&#xa;Vla4GSgrJZb7X6Uq5Mq4KL5OzjnY9R1LimMDmMQIoMvskxNd5+FUUMyvaSMPOD2G&#xa;T9F2YtRF4qCS49EdmhqWEXyBb4r8Da+MDKmSpeVsQOgqX77PPz5HvtYbwcEmVTOP&#xa;fI5oojUPYcZfhoSEDKubQu5lKJC3KCOh4kW/o+3VOEuI7s9/HX39sQvYGIM1esC5&#xa;uoIiqlM41ay0SmM518Evs3qBMfTNZZytTqUiWoO+5LhHLWqOl4XWTOmp/wGkkTZ9&#xa;F4JGu9dBCMSW6+i50iIms+Eo4vFEv20VggDNuv0COp4NFF0JfLmZEs6CnUW13ce6&#xa;lcskLpRiLrZxVWOnjLfGX8rnouWNacI0jgQ58Pzhu4tgHf3uarzVvWkzQg6o8nIu&#xa;lJSC4XtW++F/95nKEKegdsXc+XHn6FuyhLLDkbNdoiByJuSvhqwm9sjmYbllGM14&#xa;LYgFf9vqEVU+t8HlqHdWBUChq150IqUJV8QCEgrmq9BnHCh75EU2YN/wRZXjwALs&#xa;hrLFjeH+e9LFSQPCEpQXyghAXKg/vLsIHJ4cDeNsKzo95XyC4CBSDZ6B7kNhpHMD&#xa;mvRjpQN9weVC/hVn1+g4kNVvxwIDAQABo4IDaDCCA2QwHwYDVR0jBBgwFoAU70wA&#xa;kqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFDY+snkPJo1TM1yuBr+HE54hclhC&#xa;MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUF&#xa;BwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJnMCUwIwYIKwYB&#xa;BQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECAjBABgNVHR8E&#xa;OTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28uY29tL0luQ29tbW9uUlNBU2Vy&#xa;dmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYIKwYBBQUHMAKGL2h0dHA6Ly9j&#xa;cnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3J0MCMGCCsGAQUF&#xa;BzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX0GCisGAQQB1nkCBAIEggFt&#xa;BIIBaQFnAHcA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGQt8C2&#xa;AwAABAMASDBGAiEA181/HaJoynjQDB1isL75luVCGvRxKkLjXBo3AOKhwMwCIQCT&#xa;VnzS8/ff5TooakFsSwNRS6mxAOf3DLdqsailWTlkZgB1AA3h8jAr0w3BQGISCepV&#xa;LvxHdHyx1+kw7w5CHrR+Tqo0AAABkLfAte8AAAQDAEYwRAIgd6M6phaAhkHD+Prh&#xa;RHASmJ7cYXKse+yqvj/5HT0EU+wCICIPIP4Xw8cra9fEUwBwtAhG1+ogrzJ//APX&#xa;yZTt7LM+AHUAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE6+WGJjoAAAGQt8C1&#xa;4wAABAMARjBEAiBuN/gzvvkIZ6DXMBA5txqXaITDkNLd80ez/DwQyw0L7AIgek0x&#xa;oknqJ25rcCN+w361ZYaGmvMq/xPsEn83kewBQEwwZQYDVR0RBF4wXIIRc3BlZWR0&#xa;ZXN0LmtzdS5lZHWCFXNwZWVkdGVzdC5rLXN0YXRlLmVkdYIZd3d3LnNwZWVkdGVz&#xa;dC5rLXN0YXRlLmVkdYIVd3d3LnNwZWVkdGVzdC5rc3UuZWR1MA0GCSqGSIb3DQEB&#xa;DAUAA4IBgQAakQD486vnIf8f72N/x+6bfiwaBiaBNyVd4U9CNBIUm75ObSDTWl5i&#xa;PvAOS92lLoDyKmYY55nCoXTnG8ki3qYs6dWmMB3WdYR7FlPhYsz+TY1y9mxJshkB&#xa;NoaWi1/+I/2VJ8mFnIwMkLKgOgYO6Qbs2EI6UqlPCOA1cXSPv63v45j/DThf+Mdk&#xa;CDNMVlWvPXpoAQnxoKgiquS/3mg98n5MhDJ0mpp6rTdHPbsWiClaTdoYN/00ky6W&#xa;R5grYsTXmWrEEywA2f3DAuZhWazylFEfEGVXkuS8hluxZdze63doQ28Q5V45vC9w&#xa;aCHD65BngXXjik8OKg3qb0LzBVmrBVY57ZO+8agPDkBRfS3VFyaQx1BSArXNIyQn&#xa;c45Q0VEVqGiK9GmdDaBAjgpDBOeErDV0N6nm8PLz54kE+RUjppLseb4a2u9qBeGf&#xa;QXP4RVQt+82vBP69T7ZqyrEq6kEvbaGOZYXn+t15sgbIDX3v/SJCo1CITlHjB2Tb&#xa;9XekzCG5AZY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">speedtest.ksu.edu</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Kansas State University</elem>
+<elem key="stateOrProvinceName">Kansas</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">InCommon RSA Server CA 2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Internet2</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">C2F32B484AE1C7C4AAC65CB779F01DAD9F526F9EC99E1E2A269C73298D3EAA9ADE8F243F1255BF3EC91BDC6B7EF73413CA8F4EF5EA3130E23EEC4371CB5656B819282B2596FB5FA52AE4CAB828BE4ECE39D8F51D4B8A630398C408A0CBEC93135DE7E15450CCAF69230F383D864FD17662D445E2A092E3D11D9A1A96117C816F8AFC0DAF8C0CA992A5E56C40E82A5FBECF3F3E47BED61BC1C12655338F7C8E68A2350F61C65F8684840CAB9B42EE652890B72823A1E245BFA3EDD5384B88EECF7F1D7DFDB10BD81883357AC0B9BA8222AA5338D5ACB44A6339D7C12FB37A8131F4CD659CAD4EA5225A83BEE4B8472D6A8E9785D64CE9A9FF01A491367D178246BBD74108C496EBE8B9D22226B3E128E2F144BF6D158200CDBAFD023A9E0D145D097CB99912CE829D45B5DDC7BA95CB242E94622EB6715563A78CB7C65FCAE7A2E58D69C2348E0439F0FCE1BB8B601DFDEE6ABCD5BD6933420EA8F2722E949482E17B56FBE17FF799CA10A7A076C5DCF971E7E85BB284B2C391B35DA2207226E4AF86AC26F6C8E661B96518CD782D88057FDBEA11553EB7C1E5A877560540A1AB5E7422A50957C402120AE6ABD0671C287BE4453660DFF04595E3C002EC86B2C58DE1FE7BD2C54903C2129417CA08405CA83FBCBB081C9E1C0DE36C2B3A3DE57C82E020520D9E81EE4361A473039AF463A5037DC1E542FE1567D7E83890D56FC7</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">EF:4C:00:92:A6:FB:76:2E:5E:95:E2:C9:5F:87:1B:19:D5:4D:E2:D9</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">36:3E:B2:79:0F:26:8D:53:33:5C:AE:06:BF:87:13:9E:21:72:58:42</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 1.3.6.1.4.1.6449.1.2.2.103&#xa;  CPS: https://sectigo.com/CPS&#xa;Policy: 2.23.140.1.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl.sectigo.com/InCommonRSAServerCA2.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://crt.sectigo.com/InCommonRSAServerCA2.crt&#xa;OCSP - URI:http://ocsp.sectigo.com</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : DD:DC:CA:34:95:D7:E1:16:05:E7:95:32:FA:C7:9F:F8:&#xa;                3D:1C:50:DF:DB:00:3A:14:12:76:0A:2C:AC:BB:C8:2A&#xa;    Timestamp : Jul 15 18:56:18.435 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:D7:CD:7F:1D:A2:68:CA:78:D0:0C:1D:&#xa;                62:B0:BE:F9:96:E5:42:1A:F4:71:2A:42:E3:5C:1A:37:&#xa;                00:E2:A1:C0:CC:02:21:00:93:56:7C:D2:F3:F7:DF:E5:&#xa;                3A:28:6A:41:6C:4B:03:51:4B:A9:B1:00:E7:F7:0C:B7:&#xa;                6A:B1:A8:A5:59:39:64:66&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 0D:E1:F2:30:2B:D3:0D:C1:40:62:12:09:EA:55:2E:FC:&#xa;                47:74:7C:B1:D7:E9:30:EF:0E:42:1E:B4:7E:4E:AA:34&#xa;    Timestamp : Jul 15 18:56:18.415 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:77:A3:3A:A6:16:80:86:41:C3:F8:FA:E1:&#xa;                44:70:12:98:9E:DC:61:72:AC:7B:EC:AA:BE:3F:F9:1D:&#xa;                3D:04:53:EC:02:20:22:0F:20:FE:17:C3:C7:2B:6B:D7:&#xa;                C4:53:00:70:B4:08:46:D7:EA:20:AF:32:7F:FC:03:D7:&#xa;                C9:94:ED:EC:B3:3E&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 12:F1:4E:34:BD:53:72:4C:84:06:19:C3:8F:3F:7A:13:&#xa;                F8:E7:B5:62:87:88:9C:6D:30:05:84:EB:E5:86:26:3A&#xa;    Timestamp : Jul 15 18:56:18.403 2024 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:6E:37:F8:33:BE:F9:08:67:A0:D7:30:10:&#xa;                39:B7:1A:97:68:84:C3:90:D2:DD:F3:47:B3:FC:3C:10:&#xa;                CB:0D:0B:EC:02:20:7A:4D:31:A2:49:EA:27:6E:6B:70:&#xa;                23:7E:C3:7E:B5:65:86:86:9A:F3:2A:FF:13:EC:12:7F:&#xa;                37:91:EC:01:40:4C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:speedtest.ksu.edu, DNS:speedtest.k-state.edu, DNS:www.speedtest.k-state.edu, DNS:www.speedtest.ksu.edu</elem>
+</table>
+</table>
+<elem key="sig_algo">sha384WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-07-15T00:00:00</elem>
+<elem key="notAfter">2025-08-15T23:59:59</elem>
+</table>
+<elem key="md5">5cd9c786bc49549855a4465e5852a515</elem>
+<elem key="sha1">05ea58a65548a823b6e48df41f00e84afcf56e95</elem>
+<elem key="sha256">1f94e36de72016cb40c49ac5540a111dc55bfc4157803591ab9b90fa3d8032d9</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIFDCCBnygAwIBAgIQNFFMd5lOJakT3ak1NSaxFTANBgkqhkiG9w0BAQwFADBE&#xa;MQswCQYDVQQGEwJVUzESMBAGA1UEChMJSW50ZXJuZXQyMSEwHwYDVQQDExhJbkNv&#xa;bW1vbiBSU0EgU2VydmVyIENBIDIwHhcNMjQwNzE1MDAwMDAwWhcNMjUwODE1MjM1&#xa;OTU5WjBcMQswCQYDVQQGEwJVUzEPMA0GA1UECBMGS2Fuc2FzMSAwHgYDVQQKExdL&#xa;YW5zYXMgU3RhdGUgVW5pdmVyc2l0eTEaMBgGA1UEAxMRc3BlZWR0ZXN0LmtzdS5l&#xa;ZHUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDC8ytISuHHxKrGXLd5&#xa;8B2tn1JvnsmeHiomnHMpjT6qmt6PJD8SVb8+yRvca373NBPKj0716jEw4j7sQ3HL&#xa;Vla4GSgrJZb7X6Uq5Mq4KL5OzjnY9R1LimMDmMQIoMvskxNd5+FUUMyvaSMPOD2G&#xa;T9F2YtRF4qCS49EdmhqWEXyBb4r8Da+MDKmSpeVsQOgqX77PPz5HvtYbwcEmVTOP&#xa;fI5oojUPYcZfhoSEDKubQu5lKJC3KCOh4kW/o+3VOEuI7s9/HX39sQvYGIM1esC5&#xa;uoIiqlM41ay0SmM518Evs3qBMfTNZZytTqUiWoO+5LhHLWqOl4XWTOmp/wGkkTZ9&#xa;F4JGu9dBCMSW6+i50iIms+Eo4vFEv20VggDNuv0COp4NFF0JfLmZEs6CnUW13ce6&#xa;lcskLpRiLrZxVWOnjLfGX8rnouWNacI0jgQ58Pzhu4tgHf3uarzVvWkzQg6o8nIu&#xa;lJSC4XtW++F/95nKEKegdsXc+XHn6FuyhLLDkbNdoiByJuSvhqwm9sjmYbllGM14&#xa;LYgFf9vqEVU+t8HlqHdWBUChq150IqUJV8QCEgrmq9BnHCh75EU2YN/wRZXjwALs&#xa;hrLFjeH+e9LFSQPCEpQXyghAXKg/vLsIHJ4cDeNsKzo95XyC4CBSDZ6B7kNhpHMD&#xa;mvRjpQN9weVC/hVn1+g4kNVvxwIDAQABo4IDaDCCA2QwHwYDVR0jBBgwFoAU70wA&#xa;kqb7di5eleLJX4cbGdVN4tkwHQYDVR0OBBYEFDY+snkPJo1TM1yuBr+HE54hclhC&#xa;MA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUF&#xa;BwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJnMCUwIwYIKwYB&#xa;BQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECAjBABgNVHR8E&#xa;OTA3MDWgM6Axhi9odHRwOi8vY3JsLnNlY3RpZ28uY29tL0luQ29tbW9uUlNBU2Vy&#xa;dmVyQ0EyLmNybDBwBggrBgEFBQcBAQRkMGIwOwYIKwYBBQUHMAKGL2h0dHA6Ly9j&#xa;cnQuc2VjdGlnby5jb20vSW5Db21tb25SU0FTZXJ2ZXJDQTIuY3J0MCMGCCsGAQUF&#xa;BzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTCCAX0GCisGAQQB1nkCBAIEggFt&#xa;BIIBaQFnAHcA3dzKNJXX4RYF55Uy+sef+D0cUN/bADoUEnYKLKy7yCoAAAGQt8C2&#xa;AwAABAMASDBGAiEA181/HaJoynjQDB1isL75luVCGvRxKkLjXBo3AOKhwMwCIQCT&#xa;VnzS8/ff5TooakFsSwNRS6mxAOf3DLdqsailWTlkZgB1AA3h8jAr0w3BQGISCepV&#xa;LvxHdHyx1+kw7w5CHrR+Tqo0AAABkLfAte8AAAQDAEYwRAIgd6M6phaAhkHD+Prh&#xa;RHASmJ7cYXKse+yqvj/5HT0EU+wCICIPIP4Xw8cra9fEUwBwtAhG1+ogrzJ//APX&#xa;yZTt7LM+AHUAEvFONL1TckyEBhnDjz96E/jntWKHiJxtMAWE6+WGJjoAAAGQt8C1&#xa;4wAABAMARjBEAiBuN/gzvvkIZ6DXMBA5txqXaITDkNLd80ez/DwQyw0L7AIgek0x&#xa;oknqJ25rcCN+w361ZYaGmvMq/xPsEn83kewBQEwwZQYDVR0RBF4wXIIRc3BlZWR0&#xa;ZXN0LmtzdS5lZHWCFXNwZWVkdGVzdC5rLXN0YXRlLmVkdYIZd3d3LnNwZWVkdGVz&#xa;dC5rLXN0YXRlLmVkdYIVd3d3LnNwZWVkdGVzdC5rc3UuZWR1MA0GCSqGSIb3DQEB&#xa;DAUAA4IBgQAakQD486vnIf8f72N/x+6bfiwaBiaBNyVd4U9CNBIUm75ObSDTWl5i&#xa;PvAOS92lLoDyKmYY55nCoXTnG8ki3qYs6dWmMB3WdYR7FlPhYsz+TY1y9mxJshkB&#xa;NoaWi1/+I/2VJ8mFnIwMkLKgOgYO6Qbs2EI6UqlPCOA1cXSPv63v45j/DThf+Mdk&#xa;CDNMVlWvPXpoAQnxoKgiquS/3mg98n5MhDJ0mpp6rTdHPbsWiClaTdoYN/00ky6W&#xa;R5grYsTXmWrEEywA2f3DAuZhWazylFEfEGVXkuS8hluxZdze63doQ28Q5V45vC9w&#xa;aCHD65BngXXjik8OKg3qb0LzBVmrBVY57ZO+8agPDkBRfS3VFyaQx1BSArXNIyQn&#xa;c45Q0VEVqGiK9GmdDaBAjgpDBOeErDV0N6nm8PLz54kE+RUjppLseb4a2u9qBeGf&#xa;QXP4RVQt+82vBP69T7ZqyrEq6kEvbaGOZYXn+t15sgbIDX3v/SJCo1CITlHjB2Tb&#xa;9XekzCG5AZY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-methods" output="&#xa;  Supported Methods: HEAD"><table key="Supported Methods">
+<elem>HEAD</elem>
+</table>
+</script><script id="http-title" output="Speedtest | Kansas State University"><elem key="title">Speedtest | Kansas State University</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Actiontec MI424WR-GEN3I WAP" accuracy="100" line="1307">
+<osclass type="WAP" vendor="Actiontec" osfamily="embedded" accuracy="100"><cpe>cpe:/h:actiontec:mi424wr-gen3i</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" accuracy="100"><cpe>cpe:/o:linux:linux_kernel</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.95%E=4%D=5/2%OT=80%CT=%CU=%PV=N%DS=2%DC=T%G=N%TM=681557DC%P=x86&#xa;OS:_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=100%TI=I%II=I%SS=S%TS=U)OPS(O1=M5B&#xa;OS:4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4&#xa;OS:=FAF0%W5=FAF0%W6=FAF0)ECN(R=Y%DF=N%TG=80%W=FAF0%O=M5B4%CC=N%Q=)T1(R=Y%DF&#xa;OS:=N%TG=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=N%TG=80%W=FAF0%S=O%A=S+%&#xa;OS:F=AS%O=M5B4%RD=0%Q=)T4(R=Y%DF=N%TG=80%W=7FFF%S=A%A=Z%F=R%O=%RD=0%Q=)T6(R&#xa;OS:=Y%DF=N%TG=80%W=7FFF%S=A%A=Z%F=R%O=%RD=0%Q=)U1(R=N)IE(R=Y%DFI=N%TG=80%CD&#xa;OS:=S)&#xa;"/>
+</os>
+<distance value="2"/>
+<tcpsequence index="256" difficulty="Good luck!" values="17B37524,19F4620D,5C5A5319,659912D1,42321F63,548562F2"/>
+<ipidsequence class="Incremental" values="656C,6573,657A,657E,6585,658B"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace port="443" proto="tcp">
+<hop ttl="1" ipaddr="192.168.211.2" rtt="0.55"/>
+<hop ttl="2" ipaddr="198.248.86.124" rtt="40.67"/>
+</trace>
+<times srtt="33848" rttvar="9617" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1746229212"/>
+<taskend task="NSE" time="1746229212"/>
+<taskbegin task="NSE" time="1746229212"/>
+<taskend task="NSE" time="1746229212"/>
+<taskbegin task="NSE" time="1746229212"/>
+<taskend task="NSE" time="1746229212"/>
+<runstats><finished time="1746229212" timestr="Fri May  2 19:40:12 2025" summary="Nmap done at Fri May  2 19:40:12 2025; 1 IP address (1 host up) scanned in 2435.10 seconds" elapsed="2435.10" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

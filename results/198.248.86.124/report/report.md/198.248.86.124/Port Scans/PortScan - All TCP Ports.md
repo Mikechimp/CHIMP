@@ -1,3 +1,10 @@
+```bash
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN "/home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt" -oX "/home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml" 198.248.86.124
+```
+
+[/home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt](file:///home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt):
+
+```
 # Nmap 7.95 scan initiated Fri May  2 18:59:37 2025 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml 198.248.86.124
 Increasing send delay for 198.248.86.124 from 0 to 5 due to 11 out of 14 dropped probes since last increase.
 Increasing send delay for 198.248.86.124 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
@@ -187,3 +194,5 @@ HOP RTT      ADDRESS
 Read data files from: /usr/share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 # Nmap done at Fri May  2 19:40:12 2025 -- 1 IP address (1 host up) scanned in 2435.10 seconds
+
+```

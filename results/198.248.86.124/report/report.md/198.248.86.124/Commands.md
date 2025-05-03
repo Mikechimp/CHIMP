@@ -1,3 +1,4 @@
+```bash
 nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/kali/rp1/results/198.248.86.124/scans/_quick_tcp_nmap.txt" -oX "/home/kali/rp1/results/198.248.86.124/scans/xml/_quick_tcp_nmap.xml" 198.248.86.124
 
 nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN "/home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt" -oX "/home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml" 198.248.86.124
@@ -36,3 +37,5 @@ sslscan --show-certificate --no-colour 198.248.86.124:443 2>&1
 
 whatweb --color=never --no-errors -a 3 -v https://198.248.86.124:443 2>&1
 
+
+```
