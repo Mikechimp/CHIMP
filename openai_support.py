@@ -1,5 +1,7 @@
+from dotenv import load_dotenv
 from openai import OpenAI
 import os
+load_dotenv()
 
 # Load API key from environment variable or .env file (recommended)
 # Make sure OPENAI_API_KEY is set before running, or replace below with a string key.
