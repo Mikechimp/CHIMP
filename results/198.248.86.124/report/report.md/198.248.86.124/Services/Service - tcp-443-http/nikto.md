@@ -14,7 +14,7 @@ nikto -ask=no -Tuning=x4567890ac -nointeractive -host https://198.248.86.124:443
 + SSL Info:        Subject:  /C=US/ST=Kansas/O=Kansas State University/CN=speedtest.ksu.edu
                    Ciphers:  ECDHE-RSA-AES256-GCM-SHA384
                    Issuer:   /C=US/O=Internet2/CN=InCommon RSA Server CA 2
-+ Start Time:         2025-05-02 19:40:12 (GMT-4)
++ Start Time:         2025-05-03 16:57:24 (GMT-4)
 ---------------------------------------------------------------------------
 + Server: nginx/1.18.0 (Ubuntu)
 + /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
@@ -27,8 +27,8 @@ nikto -ask=no -Tuning=x4567890ac -nointeractive -host https://198.248.86.124:443
 + /admin/: This might be interesting.
 + /admin/index.php: This might be interesting: has been seen in web logs from an unknown scanner.
 + /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
-+ 7740 requests: 0 error(s) and 9 item(s) reported on remote host
-+ End Time:           2025-05-02 20:21:03 (GMT-4) (2451 seconds)
++ 7742 requests: 0 error(s) and 9 item(s) reported on remote host
++ End Time:           2025-05-03 17:46:50 (GMT-4) (2966 seconds)
 ---------------------------------------------------------------------------
 + 1 host(s) tested
 

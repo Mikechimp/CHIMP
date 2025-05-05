@@ -1,10 +1,15 @@
-# Nmap 7.95 scan initiated Fri May  2 18:59:37 2025 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml 198.248.86.124
-Increasing send delay for 198.248.86.124 from 0 to 5 due to 11 out of 14 dropped probes since last increase.
-Increasing send delay for 198.248.86.124 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+# Nmap 7.95 scan initiated Sat May  3 02:29:02 2025 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/rp1/results/198.248.86.124/scans/_full_tcp_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/xml/_full_tcp_nmap.xml 198.248.86.124
+Increasing send delay for 198.248.86.124 from 0 to 5 due to 11 out of 17 dropped probes since last increase.
+Increasing send delay for 198.248.86.124 from 5 to 10 due to 11 out of 22 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of 1946816634 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 1946816634 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 1946738776 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 1946738776 microseconds.  Ignoring time.
+Warning: 198.248.86.124 giving up on port because retransmission cap hit (6).
 Nmap scan report for 198.248.86.124
-Host is up, received user-set (0.034s latency).
-Scanned at 2025-05-02 18:59:37 EDT for 2435s
-Not shown: 65533 filtered tcp ports (no-response)
+Host is up, received user-set (0.18s latency).
+Scanned at 2025-05-03 02:29:02 EDT for 52101s
+Not shown: 61870 filtered tcp ports (no-response), 3663 closed tcp ports (reset)
 PORT    STATE SERVICE  REASON          VERSION
 80/tcp  open  http     syn-ack ttl 128 nginx 1.18.0 (Ubuntu)
 |_http-server-header: nginx/1.18.0 (Ubuntu)
@@ -51,8 +56,7 @@ PORT    STATE SERVICE  REASON          VERSION
 |     	NGINX:CVE-2025-23419	5.3	https://vulners.com/nginx/NGINX:CVE-2025-23419
 |_    	PACKETSTORM:162830	0.0	https://vulners.com/packetstorm/PACKETSTORM:162830	*EXPLOIT*
 443/tcp open  ssl/http syn-ack ttl 128 nginx 1.18.0 (Ubuntu)
-| tls-nextprotoneg: 
-|_  http/1.1
+|_http-server-header: nginx/1.18.0 (Ubuntu)
 | vulners: 
 |   nginx 1.18.0: 
 |     	2C119FFA-ECE0-5E14-A4A4-354A2C38071A	10.0	https://vulners.com/githubexploit/2C119FFA-ECE0-5E14-A4A4-354A2C38071A	*EXPLOIT*
@@ -95,6 +99,9 @@ PORT    STATE SERVICE  REASON          VERSION
 |     	NGINX:CVE-2024-7347	5.7	https://vulners.com/nginx/NGINX:CVE-2024-7347
 |     	NGINX:CVE-2025-23419	5.3	https://vulners.com/nginx/NGINX:CVE-2025-23419
 |_    	PACKETSTORM:162830	0.0	https://vulners.com/packetstorm/PACKETSTORM:162830	*EXPLOIT*
+|_http-title: Speedtest | Kansas State University
+| tls-alpn: 
+|_  http/1.1
 | ssl-cert: Subject: commonName=speedtest.ksu.edu/organizationName=Kansas State University/stateOrProvinceName=Kansas/countryName=US
 | Subject Alternative Name: DNS:speedtest.ksu.edu, DNS:speedtest.k-state.edu, DNS:www.speedtest.k-state.edu, DNS:www.speedtest.ksu.edu
 | Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US
@@ -152,38 +159,40 @@ PORT    STATE SERVICE  REASON          VERSION
 | QXP4RVQt+82vBP69T7ZqyrEq6kEvbaGOZYXn+t15sgbIDX3v/SJCo1CITlHjB2Tb
 | 9XekzCG5AZY=
 |_-----END CERTIFICATE-----
-|_http-server-header: nginx/1.18.0 (Ubuntu)
-| tls-alpn: 
+| tls-nextprotoneg: 
 |_  http/1.1
 |_ssl-date: TLS randomness does not represent time
-| http-methods: 
-|_  Supported Methods: HEAD
-|_http-title: Speedtest | Kansas State University
-Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-Device type: WAP
-Running: Actiontec embedded, Linux
-OS CPE: cpe:/h:actiontec:mi424wr-gen3i cpe:/o:linux:linux_kernel
-OS details: Actiontec MI424WR-GEN3I WAP
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+Aggressive OS guesses: Actiontec MI424WR-GEN3I WAP (96%), DD-WRT v24-sp2 (Linux 2.4.37) (96%), Linux 3.2 (94%), Linux 4.4 (92%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (92%), Microsoft Windows XP SP3 (90%), VMware Player virtual NAT device (87%), BlueArc Titan 2100 NAS device (86%)
+No exact OS matches for host (test conditions non-ideal).
 TCP/IP fingerprint:
-OS:SCAN(V=7.95%E=4%D=5/2%OT=80%CT=%CU=%PV=N%DS=2%DC=T%G=N%TM=681557DC%P=x86
-OS:_64-pc-linux-gnu)SEQ(SP=100%GCD=1%ISR=100%TI=I%II=I%SS=S%TS=U)OPS(O1=M5B
-OS:4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4
-OS:=FAF0%W5=FAF0%W6=FAF0)ECN(R=Y%DF=N%TG=80%W=FAF0%O=M5B4%CC=N%Q=)T1(R=Y%DF
-OS:=N%TG=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=N%TG=80%W=FAF0%S=O%A=S+%
-OS:F=AS%O=M5B4%RD=0%Q=)T4(R=Y%DF=N%TG=80%W=7FFF%S=A%A=Z%F=R%O=%RD=0%Q=)T6(R
-OS:=Y%DF=N%TG=80%W=7FFF%S=A%A=Z%F=R%O=%RD=0%Q=)U1(R=N)IE(R=Y%DFI=N%TG=80%CD
-OS:=S)
+SCAN(V=7.95%E=4%D=5/3%OT=80%CT=49%CU=%PV=N%DS=3%DC=T%G=N%TM=68168333%P=x86_64-pc-linux-gnu)
+SEQ(SP=100%GCD=1%ISR=108%TI=I%II=I%SS=S%TS=U)
+SEQ(SP=104%GCD=1%ISR=107%TI=I%II=I%SS=S%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W5=FAF0%W6=FAF0)
+ECN(R=Y%DF=N%TG=80%W=FAF0%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=N%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=Y%DF=N%TG=80%W=FAF0%S=O%A=S+%F=AS%O=M5B4%RD=0%Q=)
+T4(R=Y%DF=N%TG=80%W=7FFF%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=N)
+T6(R=Y%DF=N%TG=80%W=7FFF%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=S)
 
-Network Distance: 2 hops
+Network Distance: 3 hops
 TCP Sequence Prediction: Difficulty=256 (Good luck!)
 IP ID Sequence Generation: Incremental
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-TRACEROUTE (using port 443/tcp)
-HOP RTT      ADDRESS
-1   0.55 ms  192.168.211.2
-2   40.67 ms 198.248.86.124
+TRACEROUTE (using port 8080/tcp)
+HOP RTT        ADDRESS
+1   0.36 ms    192.168.211.2
+2   ...
+3   1242.82 ms 198.248.86.124
 
 Read data files from: /usr/share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Fri May  2 19:40:12 2025 -- 1 IP address (1 host up) scanned in 2435.10 seconds
+# Nmap done at Sat May  3 16:57:23 2025 -- 1 IP address (1 host up) scanned in 52101.59 seconds

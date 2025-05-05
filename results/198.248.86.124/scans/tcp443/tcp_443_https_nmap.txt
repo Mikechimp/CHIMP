@@ -1,204 +1,30 @@
-# Nmap 7.95 scan initiated Fri May  2 19:40:12 2025 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -p 443 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/kali/rp1/results/198.248.86.124/scans/tcp443/tcp_443_https_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/tcp443/xml/tcp_443_https_nmap.xml 198.248.86.124
+# Nmap 7.95 scan initiated Sat May  3 16:57:24 2025 as: /usr/lib/nmap/nmap --privileged -vv --reason -Pn -T4 -sV -p 443 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/kali/rp1/results/198.248.86.124/scans/tcp443/tcp_443_https_nmap.txt -oX /home/kali/rp1/results/198.248.86.124/scans/tcp443/xml/tcp_443_https_nmap.xml 198.248.86.124
 Nmap scan report for 198.248.86.124
-Host is up, received user-set (0.034s latency).
-Scanned at 2025-05-02 19:40:12 EDT for 73s
+Host is up, received user-set (0.041s latency).
+Scanned at 2025-05-03 16:57:24 EDT for 99s
 
 PORT    STATE SERVICE  REASON          VERSION
 443/tcp open  ssl/http syn-ack ttl 128 nginx 1.18.0 (Ubuntu)
-| http-csrf: 
-| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=198.248.86.124
-|   Found the following possible CSRF vulnerabilities: 
-|     
-|     Path: https://198.248.86.124:443/
-|     Form id: ksu-search-box
-|_    Form action: https://search.k-state.edu/
-|_ssl-date: TLS randomness does not represent time
-|_http-server-header: nginx/1.18.0 (Ubuntu)
-| http-php-version: Logo query returned unknown hash b24d83ac7326865c463d043125d0bd55
-|_Credits query returned unknown hash b24d83ac7326865c463d043125d0bd55
-|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
-|_http-jsonp-detection: Couldn't find any JSONP endpoints.
-|_http-feed: Couldn't find any feeds.
-|_http-wordpress-enum: Nothing found amongst the top 100 resources,use --script-args search-limit=<number|all> for deeper analysis)
 | http-vuln-cve2011-3192: 
 |   VULNERABLE:
 |   Apache byterange filter DoS
 |     State: VULNERABLE
-|     IDs:  BID:49303  CVE:CVE-2011-3192
+|     IDs:  CVE:CVE-2011-3192  BID:49303
 |       The Apache web server is vulnerable to a denial of service attack when numerous
 |       overlapping byte ranges are requested.
 |     Disclosure date: 2011-08-19
 |     References:
 |       https://seclists.org/fulldisclosure/2011/Aug/175
-|       https://www.securityfocus.com/bid/49303
 |       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|       https://www.securityfocus.com/bid/49303
 |_      https://www.tenable.com/plugins/nessus/55976
-|_http-date: Fri, 02 May 2025 23:40:28 GMT; -6s from local time.
-| http-sitemap-generator: 
-|   Directory structure:
-|     /
-|       Other: 1
-|   Longest directory structure:
-|     Depth: 0
-|     Dir: /
-|   Total files found (by extension):
-|_    Other: 1
-|_http-chrono: Request times for /; avg: 300.52ms; min: 248.30ms; max: 322.36ms
-| http-vhosts: 
-| 75 names had status 200
-|_53 names had status ERROR
-| ssl-enum-ciphers: 
-|   TLSv1.2: 
-|     ciphers: 
-|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256 (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (ecdh_x25519) - A
-|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (ecdh_x25519) - A
-|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 4096) - A
-|       TLS_RSA_WITH_AES_256_CCM_8 (rsa 4096) - A
-|       TLS_RSA_WITH_AES_256_CCM (rsa 4096) - A
-|       TLS_RSA_WITH_ARIA_256_GCM_SHA384 (rsa 4096) - A
-|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 4096) - A
-|       TLS_RSA_WITH_AES_128_CCM_8 (rsa 4096) - A
-|       TLS_RSA_WITH_AES_128_CCM (rsa 4096) - A
-|       TLS_RSA_WITH_ARIA_128_GCM_SHA256 (rsa 4096) - A
-|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 4096) - A
-|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256 (rsa 4096) - A
-|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 4096) - A
-|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256 (rsa 4096) - A
-|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 4096) - A
-|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 4096) - A
-|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 4096) - A
-|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 4096) - A
-|     compressors: 
-|       NULL
-|     cipher preference: server
-|     warnings: 
-|       Key exchange (ecdh_x25519) of lower strength than certificate key
-|_  least strength: A
-| http-enum: 
-|   /admin/: Possible admin folder
-|_  /admin/index.php: Possible admin folder
-| http-comments-displayer: 
-| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=198.248.86.124
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 174
-|     Comment: 
-|         
-|         //SPEEDTEST AND UI CODE
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 22
-|     Comment: 
-|         <!-- 57\xC3\x9757px -->
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 140
-|     Comment: 
-|         
-|         //CODE FOR GAUGES
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 235
-|     Comment: 
-|          //start frame loop
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 225
-|     Comment: 
-|         
-|         //poll the status from the worker (this will call updateUI)
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 229
-|     Comment: 
-|         
-|         //update the UI every frame
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 189
-|     Comment: 
-|          //Add optional parameters (see doc.md)
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 188
-|     Comment: 
-|          //w.postMessage('start'); //Add optional parameters as a JSON object to this command
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 208
-|     Comment: 
-|         
-|         //this function reads the data sent back by the worker and updates the UI
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 308
-|     Comment: 
-|         <!-- <a href="https://github.com/adolfintel/speedtest">Source code</a>   -->
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 175
-|     Comment: 
-|          //speedtest worker
-|     
-|     Path: https://198.248.86.124:443/
-|     Line number: 176
-|     Comment: 
-|_         //data from worker
-| http-security-headers: 
-|   Strict_Transport_Security: 
-|_    HSTS not configured in HTTPS Server
-| http-headers: 
-|   Server: nginx/1.18.0 (Ubuntu)
-|   Date: Fri, 02 May 2025 23:40:36 GMT
-|   Content-Type: text/html
-|   Content-Length: 10382
-|   Last-Modified: Wed, 15 Nov 2017 17:43:48 GMT
-|   Connection: close
-|   ETag: "5a0c7cd4-288e"
-|   Accept-Ranges: bytes
-|   
-|_  (Request type: HEAD)
-| http-useragent-tester: 
-|   Status for browser useragent: 200
-|   Allowed User Agents: 
-|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
-|     libwww
-|     lwp-trivial
-|     libcurl-agent/1.0
-|     PHP/
-|     Python-urllib/2.5
-|     GT::WWW
-|     Snoopy
-|     MFC_Tear_Sample
-|     HTTP::Lite
-|     PHPCrawl
-|     URI::Fetch
-|     Zend_Http_Client
-|     http client
-|     PECL::HTTP
-|     Wget/1.13.4 (linux-gnu)
-|_    WWW-Mechanize/1.34
 |_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
-|_http-fetch: Please enter the complete path of the directory to save data in.
-|_http-dombased-xss: Couldn't find any DOM based XSS.
-|_http-title: Speedtest | Kansas State University
-|_http-mobileversion-checker: No mobile version detected.
-|_http-errors: Couldn't find any error pages.
-|_http-referer-checker: Couldn't find any cross-domain scripts.
-|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
-|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
-|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_ssl-date: TLS randomness does not represent time
 | http-methods: 
-|_  Supported Methods: GET HEAD
+|_  Supported Methods: GET
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
 | ssl-cert: Subject: commonName=speedtest.ksu.edu/organizationName=Kansas State University/stateOrProvinceName=Kansas/countryName=US
 | Subject Alternative Name: DNS:speedtest.ksu.edu, DNS:speedtest.k-state.edu, DNS:www.speedtest.k-state.edu, DNS:www.speedtest.ksu.edu
 | Issuer: commonName=InCommon RSA Server CA 2/organizationName=Internet2/countryName=US
@@ -256,9 +82,179 @@ PORT    STATE SERVICE  REASON          VERSION
 | QXP4RVQt+82vBP69T7ZqyrEq6kEvbaGOZYXn+t15sgbIDX3v/SJCo1CITlHjB2Tb
 | 9XekzCG5AZY=
 |_-----END CERTIFICATE-----
+| ssl-enum-ciphers: 
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (ecdh_x25519) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 4096) - A
+|       TLS_RSA_WITH_AES_256_CCM_8 (rsa 4096) - A
+|       TLS_RSA_WITH_AES_256_CCM (rsa 4096) - A
+|       TLS_RSA_WITH_ARIA_256_GCM_SHA384 (rsa 4096) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 4096) - A
+|       TLS_RSA_WITH_AES_128_CCM_8 (rsa 4096) - A
+|       TLS_RSA_WITH_AES_128_CCM (rsa 4096) - A
+|       TLS_RSA_WITH_ARIA_128_GCM_SHA256 (rsa 4096) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 4096) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256 (rsa 4096) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 4096) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256 (rsa 4096) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 4096) - A
+|       TLS_RSA_WITH_CAMELLIA_256_CBC_SHA (rsa 4096) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 4096) - A
+|       TLS_RSA_WITH_CAMELLIA_128_CBC_SHA (rsa 4096) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       Key exchange (ecdh_x25519) of lower strength than certificate key
+|_  least strength: A
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-title: Speedtest | Kansas State University
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-mobileversion-checker: No mobile version detected.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+|_http-errors: Couldn't find any error pages.
+|_http-date: Sat, 03 May 2025 20:57:57 GMT; -8s from local time.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    Other: 1
+|_http-feed: Couldn't find any feeds.
 |_http-malware-host: Host appears to be clean
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-chrono: Request times for /; avg: 1140.53ms; min: 310.62ms; max: 3392.85ms
+| http-headers: 
+|   Server: nginx/1.18.0 (Ubuntu)
+|   Date: Sat, 03 May 2025 20:57:42 GMT
+|   Content-Type: text/html
+|   Content-Length: 10382
+|   Last-Modified: Wed, 15 Nov 2017 17:43:48 GMT
+|   Connection: close
+|   ETag: "5a0c7cd4-288e"
+|   Accept-Ranges: bytes
+|   
+|_  (Request type: HEAD)
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=198.248.86.124
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 208
+|     Comment: 
+|         
+|         //this function reads the data sent back by the worker and updates the UI
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 22
+|     Comment: 
+|         <!-- 57\xC3\x9757px -->
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 188
+|     Comment: 
+|          //w.postMessage('start'); //Add optional parameters as a JSON object to this command
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 235
+|     Comment: 
+|          //start frame loop
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 140
+|     Comment: 
+|         
+|         //CODE FOR GAUGES
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 225
+|     Comment: 
+|         
+|         //poll the status from the worker (this will call updateUI)
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 308
+|     Comment: 
+|         <!-- <a href="https://github.com/adolfintel/speedtest">Source code</a>   -->
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 229
+|     Comment: 
+|         
+|         //update the UI every frame
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 175
+|     Comment: 
+|          //speedtest worker
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 189
+|     Comment: 
+|          //Add optional parameters (see doc.md)
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 174
+|     Comment: 
+|         
+|         //SPEEDTEST AND UI CODE
+|     
+|     Path: https://198.248.86.124:443/
+|     Line number: 176
+|     Comment: 
+|_         //data from worker
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=198.248.86.124
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://198.248.86.124:443/
+|     Form id: ksu-search-box
+|_    Form action: https://search.k-state.edu/
+|_http-traceroute: ERROR: Script execution failed (use -d to debug)
+| http-vhosts: 
+| 33 names had status 200
+|_95 names had status ERROR
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Fri May  2 19:41:25 2025 -- 1 IP address (1 host up) scanned in 72.78 seconds
+# Nmap done at Sat May  3 16:59:03 2025 -- 1 IP address (1 host up) scanned in 98.98 seconds
