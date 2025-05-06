@@ -50,17 +50,18 @@ def get_shodan_data(ip):
 
 
 def passive_recon(ip):
-    print(f"\n🕵️ Passive recon on IP: {ip}\n")
-    abuse_info = get_abuseipdb_report(ip)
-    shodan_info = get_shodan_data(ip)
+    try:
+        abuse_data = get_abuseipdb_report(ip)
+        shodan_data = get_shodan_data(ip)
 
-    print("\n📂 AbuseIPDB Info:")
-    for k, v in abuse_info.items():
-        print(f"  {k}: {v}")
+        return {
+            "AbuseIPDB": abuse_data,
+            "Shodan": shodan_data
+        }
 
-    print("\n📂 Shodan Info:")
-    for k, v in shodan_info.items():
-        print(f"  {k}: {v}")
+    except Exception as e:
+        print(f"❌ Passive recon error: {e}")
+        return None
 
 
 
